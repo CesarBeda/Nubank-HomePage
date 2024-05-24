@@ -90,7 +90,7 @@ section.header{
     padding: 3rem;
 }
 
-div:nth-of-type(1){
+section.header .text-header{
     color: var(--primary);
     display: flex;
     flex-direction: column;
@@ -98,20 +98,20 @@ div:nth-of-type(1){
     width: fit-content;
     margin-left: 1rem;
 }
-div:nth-of-type(1) h1{
+section.header .text-header h1{
     font-size: 3.25rem;
     font-weight: 600;
     margin-bottom: 2rem;
 
 }
 
-div:nth-of-type(1) h2{
+section.header .text-header h2{
     font-size: 1.5rem;
     font-weight: 600;
 }
 
 /* Card of Header*/
-div:nth-of-type(2){
+section.header .card-header{
     background-color: var(--primary);
     height: fit-content;
     display: flex;
@@ -121,20 +121,20 @@ div:nth-of-type(2){
 
 }
 /* title Card */
-div:nth-of-type(2) h1{
+section.header .card-header h1{
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 3rem;
 }
 
-div:nth-of-type(2) p{
+section.header .card-header p{
     color: var(--text-input);
     font-weight: 600;
     font-size: 1rem;
 }
 
 
-div:nth-of-type(2) input{
+section.header .card-header input{
     border: transparent ;
     border-bottom: solid var(--inative-text-button-gray) 1px ;
     outline: none;
@@ -147,16 +147,16 @@ div:nth-of-type(2) input{
 }
 
 /* alert caso cpf for invalido */
-span#cpf-invalid{
-    /* color: var(--alert-color); */
+section.header .card-header span#cpf-invalid{
     color: transparent;
+    /* color: var(--alert-color); view fo text */
     font-weight: 600;
     font-size: 1rem;
     padding: 0.75rem 0 1rem 0;
 }
 
 /* /* Remove arrows from input number in WebKit-based browsers (Chrome, Safari, Edge) */
-input[type="number"]::-webkit-inner-spin-button {
+section.header .card-header input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -167,7 +167,7 @@ input[type="number"]::-webkit-inner-spin-button {
 } */
 
 /* Button */
-div:nth-of-type(2) button{
+section.header .card-header button{
     font-weight: 500;
     color: var(--inative-text-button-gray);
     border: none;
@@ -182,7 +182,121 @@ div:nth-of-type(2) button{
 }
 
 /* arrow card header button */
-div:nth-of-type(2) button img{
-    height: 2rem;
+section.header .card-header button img{
+    width: 1.25rem;
     color: #820AD1;
+}
+
+/* Carousel */
+section.carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.carousel div.container-cards{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    width: 100%;
+}
+
+/* carousel cards styles */
+section.carousel div.container-cards .carousel-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--text-black);
+    border: solid var(--bg-gray) 2px;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 1.5rem;
+    width: 330px;
+    /* 
+    height: 300px; /* 18.75rem *
+    width: 330px; /* 20.625rem *
+    */
+}
+
+/* Card Carousel icon */
+section.carousel div.container-cards .carousel-cards h1 svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Card carousel title */
+section.carousel div.container-cards .carousel-cards h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem ;
+}
+
+section.carousel div.container-cards .carousel-cards p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    /* letter-spacing: -0.01em;
+    line-height: 1.5rem; */
+    margin-bottom: 2rem;
+}
+
+
+section.carousel div.container-cards .carousel-cards a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+section.carousel div.container-cards .carousel-cards a button {
+    background: none;
+    border: transparent 0.15rem solid;
+    color: var(--purple);
+    font-weight: 600;
+    font-size: 1.15rem;
+    height: min-content;
+    display: flex;
+    align-items: center;
+}
+
+section.carousel div.container-cards .carousel-cards a button:hover{
+    border-bottom: solid var(--purple) 0.15rem;
+    cursor: pointer;
+}
+
+section.carousel div.container-cards .carousel-cards a button svg{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 0.5rem;
+}
+
+section.carousel .carousel-buttons{
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+section.carousel .carousel-buttons button{
+    background: var(--primary);
+    border: none;
+    border-radius: 5rem;
+    height: 3rem;
+    width: 3rem;
+    justify-content: center;
+    margin: 0rem 0.5rem;
+    cursor: pointer;
+}
+
+section.carousel .carousel-buttons button:hover{
+    background: var(--hover-purple-light);
+}
+
+
+section.carousel .carousel-buttons button img{
+    width: 1rem;
+    height: 1rem;
 }
