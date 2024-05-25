@@ -337,13 +337,13 @@ section.cred-card h3{
     letter-spacing: -0.05rem;
     margin-bottom: 1rem;
     line-height: 2rem;
-    margin-right: 5rem;
+    margin-right: 6rem;
 }
 
 section.cred-card div > a{
     text-decoration: none;
     color: var(--purple);
-    font-size: 1.15rem;
+    font-size: 1.125rem;
     font-weight: 550;
     width: fit-content;
     display: flex;
@@ -402,7 +402,7 @@ section.ultraviolet-card p{
 section.ultraviolet-card div > a{
     text-decoration: none;
     color: var(--primary);
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 600;
     display: flex;
     align-items: center;
