@@ -416,3 +416,42 @@ section.ultraviolet-card div > a:hover{
 section.ultraviolet-card div > a svg{
     margin-left: 0.5rem;
 }
+
+section.card-benefits{
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 10.5rem;
+}
+
+section.card-benefits > h1{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 10rem;
+}
+
+section.card-benefits ul{
+    list-style: none;
+}
+section.card-benefits ul li:not(:last-child){
+    margin-bottom: 4rem;
+}
+
+section.card-benefits ul li svg{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-bottom: 1.125rem;
+}
+
+section.card-benefits ul li h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+section.card-benefits ul li p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    width: 27rem;
+}
