@@ -367,3 +367,52 @@ section.cred-card img{
     margin-left: 4rem;
 }
 
+section.ultraviolet-card{
+    background-color: var(--ultra-violet);
+    display: flex;
+    align-items: center;
+    padding: 4rem 3.5rem;
+}
+
+section.ultraviolet-card img{
+    width: 530px;
+    margin-right: 9rem;
+}
+
+section.ultraviolet-card h1 a{
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+}
+
+section.ultraviolet-card h1 a:hover{
+    text-decoration: underline;
+}
+
+section.ultraviolet-card p{
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+    margin: 2rem 0;
+}
+
+section.ultraviolet-card div > a{
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: solid transparent 0.15rem;
+}
+section.ultraviolet-card div > a:hover{
+    border-bottom: solid var(--primary) 0.15rem;
+}
+
+section.ultraviolet-card div > a svg{
+    margin-left: 0.5rem;
+}
