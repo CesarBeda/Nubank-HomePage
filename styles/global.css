@@ -86,11 +86,11 @@ section.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 35rem;
+    gap: 25rem;
     padding: 3rem;
 }
 
-section.header .text-header{
+section.header div.text-header{
     color: var(--primary);
     display: flex;
     flex-direction: column;
@@ -98,22 +98,23 @@ section.header .text-header{
     width: fit-content;
     margin-left: 1rem;
 }
-section.header .text-header h1{
-    font-size: 3.25rem;
+section.header div.text-header h1{
+    font-size: 3rem;
     font-weight: 600;
     margin-bottom: 2rem;
-
+    letter-spacing: -0.1rem;
 }
 
-section.header .text-header h2{
+section.header div.text-header h2{
     font-size: 1.5rem;
     font-weight: 600;
+    letter-spacing: -0.05rem;
 }
 
 /* Card of Header*/
 section.header .card-header{
     background-color: var(--primary);
-    height: fit-content;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     padding: 1.75rem;
@@ -123,8 +124,9 @@ section.header .card-header{
 /* title Card */
 section.header .card-header h1{
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 570;
     margin-bottom: 3rem;
+    letter-spacing: -0.05rem;
 }
 
 section.header .card-header p{
@@ -192,6 +194,7 @@ section.carousel{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 section.carousel div.container-cards{
@@ -300,3 +303,67 @@ section.carousel .carousel-buttons button img{
     width: 1rem;
     height: 1rem;
 }
+
+section.cred-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-gray);
+    padding: 4rem 3.5rem;
+}
+
+section.cred-card h1{
+    color: var(--purple);
+    font-size: 3rem;
+    font-weight: 550;
+    letter-spacing: -0.15rem;
+    margin-right: 6rem;
+    margin-bottom: 1rem;
+}
+
+section.cred-card h1 a{
+    text-decoration: none;
+}
+section.cred-card h1 a:visited{
+    color: var(--purple); 
+}
+
+ section.cred-card h1:hover{
+    text-decoration: underline;
+} 
+section.cred-card h3{
+    font-size: 1.5rem;
+    font-weight: 550;
+    letter-spacing: -0.05rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    margin-right: 5rem;
+}
+
+section.cred-card div > a{
+    text-decoration: none;
+    color: var(--purple);
+    font-size: 1.15rem;
+    font-weight: 550;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    line-height: 1rem;
+    border: solid transparent 0.15rem;
+}
+
+section.cred-card div > a:hover{
+    border-bottom: solid var(--purple) 0.15rem;
+}
+
+section.cred-card div > a svg{
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+}
+
+section.cred-card img{
+    width: 650px;
+    margin-left: 4rem;
+}
+
