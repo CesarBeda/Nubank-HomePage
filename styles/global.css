@@ -525,3 +525,60 @@ section.more-products div.container-products-cards > div a:hover{
 section.more-products div.container-products-cards > div a svg{
     margin-left: 0.5rem;
 }
+
+section.investments{
+    background: var(--bg-gray);
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 3.5rem;
+    gap: 9.125rem;
+}
+
+section.investments div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.investments div h1 > a{
+    color: var(--purple);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    text-decoration: none;
+}
+
+section.investments div h1:hover > a{
+    text-decoration: underline;
+}
+
+ section.investments div p{
+    font-size: 1.5rem;
+    font-weight: 550;
+    letter-spacing: -0.05rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+    padding-right: 2rem; /* break the line to follow the layout */
+ }
+
+ section.investments div > a{
+    color: var(--purple);
+    font-size: 1.125rem;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-bottom: solid transparent 0.1rem;
+    line-height: 1rem;
+    text-decoration: none;
+ }
+ section.investments div > a svg{
+    margin-left: 0.5rem;
+ }
+
+ section.investments div > a:hover{
+    border-bottom: solid var(--purple) 0.1rem;
+ }
+section.investments img{
+    width: 640px;
+}
