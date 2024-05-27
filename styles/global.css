@@ -638,13 +638,68 @@ section.account-types div > a {
     width: fit-content;
     line-height: 1rem;
     text-decoration: none;
+    border-bottom: solid transparent 0.1rem;
 }
 
 section.account-types div > a:hover{
     border-bottom: solid var(--primary) 0.1rem;
 }
 
-
 section.account-types div > a svg{
     margin-left: 0.5rem;
+}
+
+section.nu-shopping{
+    background: var(--bg-gray);
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 3.5rem;
+    gap: 9rem;
+}
+
+section.nu-shopping img{
+    width: 35rem;
+}
+section.nu-shopping div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.nu-shopping div h1 > a{
+    color: var(--purple);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    text-decoration: none;
+}
+
+section.nu-shopping div p{
+    color: var(--text-black);
+    font-size: 1.5rem;
+    font-weight: 550;
+    letter-spacing: -0.05rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+section.nu-shopping div > a{
+    color: var(--purple);
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    line-height: 1rem;
+    border-bottom: solid transparent 0.1rem;
+}
+
+section.nu-shopping div > a svg{
+    margin-left: 0.5rem;
+}
+
+section.nu-shopping div > a:hover{
+    border-bottom: solid var(--purple) 0.1rem;
 }
