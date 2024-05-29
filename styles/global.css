@@ -808,7 +808,7 @@ section.about{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10rem 0;
+    height: 41.5rem;
     padding-left: 17.5rem;
 }
 
@@ -817,7 +817,7 @@ section.about h1{
     font-size: 3rem;
     font-weight: 600;
     letter-spacing: -0.1rem;
-    width: 60%;
+    width: 50%;
     margin-bottom: 2rem;
 }
 
@@ -830,12 +830,61 @@ section.about a{
     align-items: center;
     width: fit-content;
     line-height: 1rem;
-    border-bottom: solid transparent(--primary) 0.1rem;
+    border-bottom: solid transparent 0.1rem;
 }
 section.about a:hover{
     border-bottom: solid var(--primary) 0.1rem;
 }
 
 section.about a svg{
+    margin-left: 0.5rem;
+}
+
+section.nu-community{
+    background-image: url('/assets/images/bg-community-section.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 41.5rem;
+    padding-left: 17.5rem;
+}
+
+section.nu-community h1{
+    color: var(--purple);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    width: 50%;
+    margin-bottom: 0.5rem;
+}
+
+section.nu-community h2{
+    color: var(--purple);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+section.nu-community a{
+    color: var(--purple);
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-bottom: solid transparent 0.1rem;
+}
+
+section.nu-community a:hover{
+    border-bottom: solid var(--purple) 0.1rem;
+}
+
+section.nu-community a svg{
     margin-left: 0.5rem;
 }
