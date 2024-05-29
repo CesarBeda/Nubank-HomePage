@@ -703,3 +703,99 @@ section.nu-shopping div > a svg{
 section.nu-shopping div > a:hover{
     border-bottom: solid var(--purple) 0.1rem;
 }
+
+section.blog{
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3.5rem;
+}
+
+section.blog h1{
+    color: var(--text-black);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    margin-bottom: 0.75rem;
+}
+
+section.blog > a {
+    color: var(--purple);
+    font-size: 1.125rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    text-decoration: none;
+    border-bottom: solid transparent 0.1rem;
+    margin-bottom: 2.5rem;
+}
+
+section.blog > a:hover{
+    border-bottom: solid var(--purple) 0.1rem;
+}
+section.blog > a svg{
+    margin-left: 0.5rem;
+}
+
+
+section.blog div.container-blog-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+section.blog div.container-blog-cards div.blog-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid var(--bg-gray) 0.1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 33.33%;
+    /* border: 1px solid greenyellow; */
+} 
+
+section.blog div.container-blog-cards div.blog-cards img{
+    display: flex;
+    width: 100%; 
+    height: 400px;
+    object-fit: cover;
+}
+
+section.blog div.container-blog-cards div.blog-cards span{
+    color: var(--text-black);
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin: 1.5rem 1.5rem 0.75rem 1.5rem;
+}
+
+section.blog div.container-blog-cards div.blog-cards h2{
+    color: var(--text-black);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+    line-height: 2rem;
+    margin: 0 1.5rem;
+    /* margin-bottom: ; */
+}
+
+section.blog div.container-blog-cards div.blog-cards  a{
+    color: var(--purple);
+    font-size: 1.125rem;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    text-decoration: none;
+    margin: 1.5rem 1.5rem;
+    border-bottom: solid transparent 0.1rem;
+}
+
+section.blog div.container-blog-cards div.blog-cards  a:hover{
+    border-bottom: solid var(--purple) 0.1rem;
+}
+
+section.blog div.container-blog-cards div.blog-cards  a svg{
+    margin-left: 0.5rem;
+}
