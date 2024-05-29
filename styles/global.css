@@ -888,3 +888,42 @@ section.nu-community a:hover{
 section.nu-community a svg{
     margin-left: 0.5rem;
 }
+
+section.sos-nu{
+    background-image: url('/assets/images/bg-sos-nu-section.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 41.5rem;
+    padding-left: 17.5rem;
+}
+
+section.sos-nu h1{
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+section.sos-nu a{
+    color: var(--primary);
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    line-height: 1rem;
+    border-bottom: solid transparent 0.1rem;
+}
+section.sos-nu a:hover{
+    border-bottom: solid var(--primary) 0.1rem;
+}
+section.sos-nu a svg{
+    margin-left: 0.5rem;
+}
