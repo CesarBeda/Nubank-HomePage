@@ -799,3 +799,43 @@ section.blog div.container-blog-cards div.blog-cards  a:hover{
 section.blog div.container-blog-cards div.blog-cards  a svg{
     margin-left: 0.5rem;
 }
+
+section.about{
+    background-image: url('/assets/images/bg-about-section.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem 0;
+    padding-left: 17.5rem;
+}
+
+section.about h1{
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+section.about a{
+    color: var(--primary);
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    line-height: 1rem;
+    border-bottom: solid transparent(--primary) 0.1rem;
+}
+section.about a:hover{
+    border-bottom: solid var(--primary) 0.1rem;
+}
+
+section.about a svg{
+    margin-left: 0.5rem;
+}
