@@ -1,6 +1,6 @@
 :root{
     --primary:#FFFFFF;
-    --bg-footer:#111111;
+    --bg-footer:#1b0021;
     --bg-gray:#F5F5F5;
     --text-black:#000000;
     --text-input:#585858;
@@ -926,4 +926,130 @@ section.sos-nu a:hover{
 }
 section.sos-nu a svg{
     margin-left: 0.5rem;
+}
+
+footer{
+    background: var(--bg-footer);
+    display: flex;
+    flex-direction: column;
+    /* padding: 5rem 3.5rem; */
+}
+footer nav{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 0rem 3.5rem;
+    padding-top: 5rem;
+}
+footer nav ul{
+    /* border: #d72923 solid 1px; */
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+footer nav ul p{
+    /* border: magenta solid 1px; */
+    color: var(--primary);
+    font-size: 1.125rem;
+    font-weight: 400;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+footer nav ul li{
+    /* border: greenyellow solid 1px; */
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    list-style: none;
+
+}
+
+footer nav ul li > a{
+    /* border: blue solid 1px; */
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+footer nav ul li > a:hover{
+    color: var(--purple);
+}
+
+footer nav ul li > a svg{
+    margin-left: 0.5rem;
+}
+
+footer > hr{
+    border-bottom: none;
+    border-color: var(--inative-text-button-gray);
+    border-color: #62008c;
+}
+
+footer div.company{
+    color: var(--primary);
+    display: flex;
+    padding: 5rem 3.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div.company span{
+    display: flex;
+    align-items: center;
+}
+
+footer div.company span svg{
+    fill: var(--primary);
+    color: var(--primary);
+    margin-right: 3.5rem;
+}
+footer div.company div.social-media{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer div.company div.social-media svg{
+    fill: var(--primary);
+    color: var(--primary);
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+footer div.company div.social-media a:hover svg{
+    fill: var(--purple);
+    color: var(--purple);
+}
+
+
+footer div.me-github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 3.5rem;
+}
+
+footer div.me-github svg{
+    fill: var(--primary);
+    margin-right: 0.5rem;
+}
+
+footer div.me-github a{
+    color: var(--primary);
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: solid transparent 0.1rem;
+}
+
+footer div.me-github a:hover{
+    border-bottom: solid var(--primary) 0.1rem;
 }
