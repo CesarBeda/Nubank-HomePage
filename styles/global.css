@@ -17,10 +17,12 @@
 /* TO DO: fixes fill color of svg */
 /* TO DO: make animation for header card cpf input with javascript */
 
+
 header{
     position: sticky;
     background-color: var(--bg-primary);
     height: 3.75rem;
+    
 }
  header nav{
     display: flex;
@@ -76,6 +78,59 @@ header nav button{
 
 header nav button:hover{
     border-bottom: solid var(--purple) 0.15rem;
+}
+
+.menu-dropdown{
+    background-color: var(--primary);
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+.menu-dropdown > div{
+    width: auto;
+    width: 100%;
+    margin-left: 2rem;
+    margin-bottom: 4rem ;
+    
+    ul *{
+        margin-top: 1rem;
+    }
+
+    > ul > p {
+        color: var(--text-black);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    > ul > li > a{ 
+        color: var(--text-black);
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: -0.05rem;
+        text-decoration: none;
+    }
+
+    ul > li{
+        list-style: none;
+    }
+}
+
+/* Switch drop down menus */
+#submenu-1{
+    /* display: flex; */
+    display: none;
+    gap: 7rem; /* individuals gaps for layout */
+}
+
+#submenu-2{
+    /* display: flex; */
+    display: none;
+    gap: 32rem; /* individuals gaps for layout */
+}
+#submenu-3{
+    /* display: flex; */
+    display: none;
+    gap: 20rem; /* individuals gaps for layout */
 }
 
 section.header{
