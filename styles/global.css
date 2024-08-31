@@ -16,6 +16,7 @@
 
 /* TO DO: fixes fill color of svg */
 /* TO DO: make animation for header card cpf input with javascript */
+/* TO DO: adjust rotate of header arrow according to drop down */
 
 
 header{
@@ -58,7 +59,7 @@ header nav ul li a{
 }
 
 /* menu selects arrow animation for dropdown  */
-header nav ul li:hover img.arrow-menu{
+header nav ul li:hover img.arrow-header{
     transform: rotate(180deg);
     transition: 0.2s;
 }
@@ -84,13 +85,19 @@ header nav button:hover{
     background-color: var(--primary);
     position: absolute;
     display: flex;
+    overflow: hidden;
     width: 100%;
+    max-height: 0px;
+    transition: max-height 0.3s linear;
+    
 }
-.menu-dropdown > div{
-    width: auto;
+.menu-dropdown.open{
+    max-height: 500px;
+}
+
+.submenu{
     width: 100%;
-    margin-left: 2rem;
-    margin-bottom: 4rem ;
+    padding: 2rem 0 4rem 2rem;
     
     ul *{
         margin-top: 1rem;
@@ -110,6 +117,10 @@ header nav button:hover{
         text-decoration: none;
     }
 
+    > ul > li > a:hover{
+        color: var(--purple);
+    }
+
     ul > li{
         list-style: none;
     }
@@ -117,18 +128,16 @@ header nav button:hover{
 
 /* Switch drop down menus */
 #submenu-1{
-    /* display: flex; */
     display: none;
     gap: 7rem; /* individuals gaps for layout */
 }
 
 #submenu-2{
-    /* display: flex; */
     display: none;
     gap: 32rem; /* individuals gaps for layout */
 }
+
 #submenu-3{
-    /* display: flex; */
     display: none;
     gap: 20rem; /* individuals gaps for layout */
 }
