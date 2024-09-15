@@ -12,6 +12,7 @@
     --hover-purple:#ab4bea;
     --hover-purple-light:#f4e7ff;
     --alert-color:#d72923;
+    --aprove-cpf: #2db965;
 }
 
 /* TO DO: fixes fill color of svg */
@@ -58,12 +59,6 @@ header nav ul li a{
     text-decoration: none;
 }
 
-/* menu selects arrow animation for dropdown  */
-header nav ul li:hover img.arrow-header{
-    transform: rotate(180deg);
-    transition: 0.2s;
-}
-
 header nav button{
     background-color: var(--primary);
     color: var(--purple);
@@ -92,14 +87,16 @@ header nav button:hover{
     
 }
 .menu-dropdown.open{
-    max-height: 500px;
+    max-height: 600px;
 }
 
 .submenu{
+    background-color: var(--primary);
     width: 100%;
-    padding: 2rem 0 4rem 2rem;
+    padding: 2rem 0 4.5rem 2rem;
+    z-index: 2;
     
-    ul *{
+    ul {
         margin-top: 1rem;
     }
 
@@ -123,6 +120,7 @@ header nav button:hover{
 
     ul > li{
         list-style: none;
+        margin-top: 1.25rem;
     }
 }
 
@@ -176,7 +174,8 @@ section.header div.text-header h2{
 }
 
 /* Card of Header*/
-section.header .card-header{
+.card-header{
+    position: relative;
     background-color: var(--primary);
     width: fit-content;
     display: flex;
@@ -186,46 +185,75 @@ section.header .card-header{
 
 }
 /* title Card */
-section.header .card-header h1{
+ .card-header h1{
     font-size: 1.5rem;
     font-weight: 570;
     margin-bottom: 3rem;
     letter-spacing: -0.05rem;
 }
 
-section.header .card-header p{
+ .card-header p#placeholder-cpf{
     color: var(--text-input);
     font-weight: 600;
-    font-size: 1rem;
+    /* font-size: 0.75rem; */
+    font-size: 0.9rem;
+    position: absolute;
+    top: 9.5rem; /* em cima do input de cpf */
+    z-index: 0;
+}
+.card-header .input-icons{
+    position: absolute;
+    /* border: 1px solid salmon; */
+    top: 9.3rem;
+    right: 3rem;
+}
+.card-header #input-valid-icon{
+    position: absolute;
+    height: 1rem;
+    fill: rgb(0, 198, 16);
+    display: none;
+    
+}
+.card-header #input-invalid-icon{
+    position: absolute;
+    height: 1rem;
+    fill: rgb(193, 0, 0);
+    display: none;
 }
 
-
-section.header .card-header input{
+ .card-header input{
     border: transparent ;
     border-bottom: solid var(--inative-text-button-gray) 1px ;
     outline: none;
     background: transparent;
     font-size: 1.25rem;
     font-weight: 600;
-    padding: -0.5rem 0;
-    /* margin-top: -1rem; */
-    /* margin-bottom: 3rem; */
+    padding: 0.5rem 0 0.5rem 0 ;
+    z-index: 1;
+
+}
+.card-header input:hover{
+    border: transparent ;
+    border-bottom: solid var(--text-black) 1px ;
 }
 
 /* alert caso cpf for invalido */
-section.header .card-header span#cpf-invalid{
+ .card-header span#cpf-invalid{
     color: transparent;
-    /* color: var(--alert-color); view fo text */
+    /* color: var(--alert-color); view for text */
+    user-select: none;
+    cursor: default;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.85rem;
     padding: 0.75rem 0 1rem 0;
 }
 
 /* /* Remove arrows from input number in WebKit-based browsers (Chrome, Safari, Edge) */
-section.header .card-header input[type="number"]::-webkit-inner-spin-button {
+ .card-header input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 
 /* Remove the input number arrows in Firefox */
 /* input[type="number"] {
@@ -233,8 +261,7 @@ section.header .card-header input[type="number"]::-webkit-inner-spin-button {
 } */
 
 /* Button */
-section.header .card-header button{
-    font-weight: 500;
+ .card-header button{
     color: var(--inative-text-button-gray);
     border: none;
     border-radius: 2rem;
@@ -242,15 +269,16 @@ section.header .card-header button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.15rem;
+    font-weight: 500;
+    font-size: 1rem;
     padding: 0.75rem 1.25rem;
     margin-bottom: 1rem;
 }
 
 /* arrow card header button */
-section.header .card-header button img{
+ .card-header button svg{
     width: 1.25rem;
-    color: #820AD1;
+    color: inherit;
 }
 
 /* Carousel */
