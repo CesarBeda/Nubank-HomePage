@@ -1,0 +1,848 @@
+/* for viewing via vs code's live server extension. */
+#shadow-host-companion{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+  --primary: #ffffff;
+  --black: #000000;
+  --gray: #f5f5f5;
+  --purple: #820ad1;
+  --purple-light: #f4e7ff;
+  --purple-medium: #ab4bea;
+  --ultraviolet: #2f0549;
+  --bg-footer: #1b0021;
+  --red: #d72923;
+  --green: #1f7f45;
+  --gray-placeholder: #585858;
+  --gray-bg-inactive: #e7e7e7;
+  --gray-text-inactive: #bcbcbc;
+}
+
+/* General styles for repetitive elements */
+
+/* espaçamento utilizados em diferentes seções */
+section {
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+  padding: 4rem 3.5rem;
+}
+
+/* styles all <h2> of page */
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    letter-spacing: -0.05rem;
+}
+
+/* styles all <h2> of page */
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+    height: fit-content;
+    width: fit-content;
+
+    /* border: 1px red solid; */
+}
+
+/* <h2> title with <a> links */
+h2 > a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+}
+
+h2 > a:hover {
+    text-decoration: underline;
+}
+
+/* styles all <h3> of page */
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+    line-height: 2rem;
+}
+
+/* <p> bold */
+p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+  line-height: 2rem;
+}
+
+/* <p> light */
+div > div > p,
+ul > li > p{
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -0.05rem;
+}
+
+/* all images */
+img{
+  object-fit: cover;
+  width: 45%;
+}
+
+/* imagens de sections dividas (.account-types)  */
+section > div > img{
+  width: 100%;
+  height: 26.25rem; /* 420px */
+}
+
+/* cards img height  (.more-products and .blog sections)*/
+div > div > img{
+  width: 100%;
+  height: 25rem; /* 400px */
+}
+
+/* standardizing <a> link styles */
+div > a,
+section > a{
+  color: inherit;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: -0.05rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  border-bottom: solid transparent 0.1rem;
+}
+
+div > a:hover,
+section > a:hover {
+  border-bottom: solid 0.1rem;
+  border-color: inherit;
+}
+
+div > a  > svg,
+section > a > svg {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+/* individuals elements styles */
+
+/* Header */
+header {
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: 3.5rem;
+  width: 100%;
+  box-shadow: 0px 1px 4px 0px #00000030;
+}
+
+header nav.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3rem; /* space the logo to the left margin of the page. */
+  height: 100%;
+}
+
+.header-menu ul {
+  color: var(--black);
+  display: flex;
+  height: inherit;
+  gap: 1.5rem;
+}
+
+.header-menu ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 100%;
+  width: max-content;
+  gap: 0.5rem;
+  cursor: default;
+  list-style: none;
+}
+
+.header-menu ul li a {
+  cursor: pointer;
+  color: var(--black);
+  text-decoration: none;
+}
+
+/* header login link */
+.header-menu > a{
+  color: var(--purple);
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  gap: 0.5rem; /* space between text and icon. */
+  border-bottom: solid transparent 0.15rem; /* to: don't move when hovering. */
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.header-menu > a:hover {
+  border-bottom: solid var(--purple) 0.15rem;
+}
+
+header nav.menu-dropdown {
+  background-color: transparent; /* invisible because there is space left for the dropdown transition. */
+  display: flex;
+  align-items: start;
+  overflow: hidden;
+  height: 0px;
+  width: 100%;
+  margin: 0;
+  transition: height 0.2s ease-in;
+}
+.menu-dropdown.open {
+  height: 550px; /* more space than necessary to support all submenus */
+}
+
+.submenu {
+  background-color: var(--primary);
+  width: 100%;
+  padding: 2rem 0 4.5rem 2rem;
+  box-shadow: 0px 1px 4px 0px #00000030;
+}
+
+.submenu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu ul > p {
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.submenu ul > li {
+  list-style: none;
+  height: auto;
+  margin-top: 1.25rem;
+}
+
+.submenu ul > li > a {
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+  text-decoration: none;
+}
+
+.submenu > ul > li > a:hover {
+  color: var(--purple);
+}
+  
+/* Switch drop down menus */
+#submenu-1 {
+  display: none;
+  gap: 7rem; /* individuals gaps for layout */
+}
+
+#submenu-2 {
+  display: none;
+  gap: 32rem; /* individuals gaps for layout */
+}
+
+#submenu-3 {
+  display: none;
+  gap: 20rem; /* individuals gaps for layout */
+}
+
+/* Styles Hero section */
+section.hero-section {
+  background-image: url(/assets/images/header-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42rem;
+  margin-top: 3.5rem; /* borda alinhada com borda do header */
+}
+
+/* Titles hero section */
+.hero-section div.text-hero-section {
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.text-hero-section h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: -0.1rem;
+}
+
+/* different style from the others <h2>. */
+.text-hero-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+}
+
+/* Card of Hero section*/
+.hero-section div.card-hero-section {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; /* for placeholder-cpf position */
+  width: fit-content;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.card-hero-section p#placeholder-cpf {
+  color: var(--gray-placeholder);
+  font-size: 0.875rem;
+  letter-spacing: -0.01rem;
+  position: absolute;
+  top: 9rem; /* on top of the cpf input */
+  z-index: 0; /* behind to make the input clickable */
+}
+
+.card-hero-section input {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: transparent;
+  border: transparent;
+  border-bottom: solid var(--gray-text-inactive) 1px;
+  padding: 0.5rem 0;
+  margin-top: 3rem;
+  outline: none;
+  z-index: 1;
+}
+.card-hero-section input:hover {
+  border: transparent;
+  border-bottom: solid var(--black) 1px;
+}
+
+.card-hero-section .input-icons {
+  position: absolute;
+  top: 9.3rem;
+  right: 3rem;
+}
+
+.card-hero-section #input-valid-icon {
+  position: absolute;
+  height: 1rem;
+  fill: var(--green);
+  display: none;
+}
+
+.card-hero-section #input-invalid-icon {
+  position: absolute;
+  height: 1rem;
+  fill: var(--red);
+  display: none;
+}
+
+/* alert if cpf is invalid. */
+.card-hero-section span#cpf-invalid {
+  color: transparent;
+  user-select: none;
+  cursor: default;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 1rem 0;
+}
+
+/* /* Remove arrows from input number in WebKit-based browsers (Chrome, Safari, Edge) */
+.card-hero-section input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove the input number arrows in Firefox */
+.card-hero-section input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Button */
+.card-hero-section button {
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: var(--gray-bg-inactive);
+  color: var(--gray-text-inactive);
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  padding: 0 1.25rem;
+  cursor: not-allowed;
+}
+
+/* arrow card header button */
+.card-hero-section button svg {
+  width: 1.25rem;
+  color: inherit;
+  fill: inherit;
+}
+
+/* Carousel Cards*/
+section.carousel{
+  flex-direction: column;
+  align-items: start;
+  padding-left: 0;
+  padding-right: 0;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.carousel div.container-cards{
+  display: flex;
+  width: calc(100% * 4); /* 100% width times number of pages (slides) */
+  transition: transform 0.5s ease; /* smooth transition for carousel navigation. */
+}
+
+.container-cards div.carousel-track{
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Cards */
+.carousel-cards{
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  border: var(--gray) solid 2px;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.carousel-cards h3{
+  margin-top: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.carousel p{
+  margin-bottom: 1rem;
+}
+
+.carousel-cards a{
+  color: var(--purple);
+  margin-top: auto;
+}
+
+.carousel-cards a:hover{
+  border-color: var(--purple);
+}
+
+/* carousel previous and next buttons */
+.carousel .carousel-buttons{
+  margin: 0 auto;/*  */
+  user-select: none;
+}
+
+.carousel-buttons button {
+  background: var(--primary);
+  border: none;
+  border-radius: 5rem;
+  height: 3rem;
+  width: 3rem;
+  margin: 0rem 0.5rem; 
+  cursor: pointer;
+  transition: background-color 0.25s linear;
+}
+
+.carousel-buttons button:hover {
+  background-color: var(--purple-light);
+  transition: background-color 0.25s linear;
+}
+
+.carousel-buttons button:active{
+    background-color: var(--purple-medium);
+    transition: background-color 1s linear;
+}
+
+.carousel-buttons button svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+section.cred-card {
+    background-color: var(--gray);
+}
+
+.cred-card h2,
+.cred-card a{
+    color: var(--purple);
+}
+
+.cred-card div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+section.ultraviolet-card {
+    background-color: var(--ultraviolet);
+    color: var(--primary);
+}
+
+.ultraviolet-card div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section.card-benefits {
+    align-items: start;
+    padding: 6rem 10.5rem;
+}
+
+.card-benefits ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card-benefits ul li{
+    list-style: none;
+}
+
+.card-benefits ul li svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+/* <p> light */
+.card-benefits ul li p {
+    margin-top: 0.5rem;
+}
+
+section.more-products {
+    flex-direction: column;
+    align-items: start;
+    gap: 2.5rem;
+}
+
+.more-products h2, /* title section */
+.more-products h3, /* title card */
+.more-products a  /*link card  */{
+    color: var(--purple);
+}
+
+.more-products div.container-products-cards {
+    display: flex;
+    gap: 2rem;
+}
+
+/* more-products cards */
+.more-products-cards {
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+}
+
+/* spacing of the card content, except the image and the svg arrow inside the card link. */
+.more-products-cards *:not(img, svg) {
+    margin: 0 1.5rem;
+    margin: 1rem 1.5rem 0 1.5rem ;
+}
+
+section.investments {
+    background-color: var(--gray);
+}
+
+.investments div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.investments h2, 
+.investments a {
+    color: var(--purple);
+}
+
+section.account-types {
+    gap: 0; /* remove gap from sections defined at the top  */
+    padding: 0; /* remove padding from sections defined at the top  */
+    color: var(--primary);
+}
+
+/* standard account */
+.account-types div:first-child {
+    background: var(--purple);
+}
+
+/* corporate account */
+.account-types div:last-child {
+    background: var(--ultraviolet);
+}
+
+/* both accounts */
+.account-types div{
+    padding: 4rem 3.5rem;
+    width: 100%; /* maximum width for both */
+}
+
+.account-types div img{
+    margin-bottom: 2.5rem;
+}
+
+.account-types div p{
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+section.nu-shopping{
+  background-color: var(--gray);
+}
+
+.nu-shopping h2, 
+.nu-shopping a {
+    color: var(--purple);
+}
+
+.nu-shopping p{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+section.blog{
+  flex-direction: column;
+  align-items: start;
+  gap: 0;
+}
+
+.blog h2{
+  margin-bottom: 1rem;
+}
+
+.blog > a{
+  color: var(--purple);
+  margin-bottom: 2.5rem;
+}
+
+.container-blog-cards{
+  display: flex;
+  gap: 2.5rem;
+}
+
+/* blog section cards */
+.blog-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  border: solid var(--gray) 0.125rem /* 2px */;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+/* spacing of the card content, except the image and the svg arrow inside the card link. */
+.blog-cards *:not(img, svg) {
+  margin: 0 1.5rem;
+}
+
+
+.blog-cards p{
+  font-size: 0.875rem; /* 14px */ /* <p> font size reduced from 18px to 14px. */
+  height: 1.125rem; /* 18px - height slightly larger than text. */
+  line-height: 1.125rem; /* center text vertically on the element. */
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-cards h3{
+  margin-bottom: auto;
+}
+
+.blog-cards a{
+  color: var(--purple);
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.blog-cards a:hover{
+  border-color: var(--purple);
+}
+
+
+/* the last 3 sections before the footer. */
+section.about,
+section.nu-community,
+section.sos-nu{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  height: 41.5rem;
+  padding-left: 17.5rem;
+  padding-right: 30%;
+}
+
+section.about{
+  background-image: url('/assets/images/bg-about-section.jpg');
+  color: var(--primary);
+}
+
+.about a:hover{
+  border-color: var(--primary);
+}
+
+section.nu-community{
+  background-image: url('/assets/images/bg-community-section.jpg');
+  color: var(--purple);
+  gap: 0;
+
+}
+
+.nu-community p{
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.nu-community a:hover{
+  border-color: var(--purple);
+}
+
+section.sos-nu{
+  background-image: url('/assets/images/bg-sos-nu-section.jpg');
+  color: var(--primary); 
+}
+
+.sos-nu a:hover{
+  border-color: var(--primary);
+}
+
+/* footer */
+footer {
+  background: var(--bg-footer);
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 5rem 3.5rem 0 3.5rem;
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+footer nav ul p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+footer nav ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  width: fit-content;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+footer nav ul li > a{
+  color: var(--primary);
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.05rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  width: fit-content;
+}
+
+footer nav ul li > a:hover {
+  color: var(--purple);
+}
+
+/*  */
+footer div.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 3.5rem;
+  border-top: 1px solid var(--ultraviolet);
+  border-bottom: 1px solid var(--ultraviolet);
+
+}
+
+.company span {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+footer div.company div.social-media {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-media svg {
+  fill: var(--primary);
+  color: var(--primary);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* removing the bottom border from the default link style defined at the top */
+div.social-media a{
+  border: none;
+}
+
+.social-media a:hover svg {
+  fill: var(--purple);
+  color: var(--purple);
+}
+
+footer div.me-github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 4rem 0;
+}
+
+.me-github svg {
+  fill: var(--primary);
+}
+
+.me-github a:hover {
+  border-color: var(--primary);
+}

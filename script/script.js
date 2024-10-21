@@ -1,10 +1,9 @@
 // script.js
 
 //Carousel Cards Script
-
 let index = 0;
-const cardsToShow = 4; // Número de cards a serem exibidos
-const totalCards = document.querySelectorAll('.carousel-cards').length; // Contagem total de cards (considerando duplicação)
+const cardsToShow = 4; // Number of cards to be displayed.
+const totalCards = document.querySelectorAll('.carousel-cards').length; 
 const totalSlides = Math.ceil(totalCards / cardsToShow);
 
 function updateCarousel() {
@@ -21,16 +20,14 @@ function moveSlide(step) {
     updateCarousel();
 }
 
-// Event listeners for buttons
+// Event listeners for arrow carousel buttons
 document.querySelector('.next').addEventListener('click', () => moveSlide(1));
 document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
 
 // Inicializa o carousel
 updateCarousel();
 
-
 //SubMenu Drop-Down script
-
 const containerDropDown = document.querySelector('.menu-dropdown');
 const subMenu1 = document.getElementById('submenu-1');
 const subMenu2 = document.getElementById('submenu-2');
@@ -97,7 +94,6 @@ subMenu2.addEventListener('mouseleave', () => hideSubmenu(1));
 subMenu3.addEventListener('mouseleave', () => hideSubmenu(2));
 
 // Hero Section CPF Card
-
 const input = document.querySelector('input');
 const placeholder = document.getElementById('placeholder-cpf');
 const span = document.querySelector('#cpf-invalid');
@@ -108,9 +104,10 @@ let firstTimeInput = true;
 
 function formatCpf(){
 
-    let value = input.value.replace(/\D/g, ''); // Remove todos os caracteres que não são dígitos.
+    let value = input.value.replace(/\D/g, ''); // Removes all characters that are not digits.
 
-    // Formata conforme o padrão ###.###.###-##
+    // Formata conforme o padrão ###.###.###-##.
+    // Format to standard ###.###.###-##
     if      (value.length > 3 && value.length <= 6) { value = value.slice(0, 3) + '.' + value.slice(3);} 
     else if (value.length > 6 && value.length <= 9) { value = value.slice(0, 3) + '.' + value.slice(3, 6) + '.' + value.slice(6); } 
     else if (value.length > 9)                      { value = value.slice(0, 3) + '.' + value.slice(3, 6) + '.' + value.slice(6, 9) + '-' + value.slice(9, 11); }
@@ -131,32 +128,34 @@ function formatCpf(){
 
 function approveCpf(){
 
-    //se cpf for válido ou inválido
+    //if cpf is valid or invalid.
     if (validateCPF(input.value)){
         console.log('cpf valido');
         span.style.color = 'transparent';
-        input.style.color = 'green';
-        input.style.borderBottom = 'green solid 1px';
-        validIcon.style.display = 'block'
-        invalidIcon.style.display = 'none'
-        button.style.backgroundColor = 'purple';
-        button.style.color = 'white';
+        input.style.color = 'var(--green)';
+        input.style.borderColor = 'var(--green)';
+        validIcon.style.display = 'block';
+        invalidIcon.style.display = 'none';
+        button.style.backgroundColor = 'var(--purple)';
+        button.style.color = 'var(--primary)';
         button.style.cursor = 'pointer';
-        // return true;
-        
+        button.addEventListener('click', () => {
+            window.open("https://nubank.com.br/conta", "_blank");
+        })
+        button.disabled = false;
         
     } else {
         console.log('cpf invalido');
-        span.style.color = '#d72923';
-        input.style.color = '#d72923';
-        input.style.borderBottom = '#d72923 solid 1px';
-        invalidIcon.style.display = 'block'
+        span.style.color = 'var(--red)';
+        span.style.userSelect = 'text';
+        input.style.color = 'var(--red)';
+        input.style.borderColor = 'var(--red)';
+        invalidIcon.style.display = 'block';
         validIcon.style.display = 'none';
-        button.style.backgroundColor = '#e7e7e7';
-        button.style.color = '#bcbcbc';
-        button.style.cursor = 'not-allowed'; 
-        // return false;
-        
+        button.style.backgroundColor = 'var(--gray-bg-inactive)';
+        button.style.color = 'var(--gray-text-inactive)';
+        button.style.cursor = 'not-allowed';
+        button.disabled = true;  
     }
 }
 
@@ -167,14 +166,14 @@ function validateCPF(cpf) {
 
     console.log("cpf: " + cpf);
     
-    // Verifica se o CPF tem 11 dígitos ou é uma sequência repetida (tipo "111.111.111-11")
-    // Checks if the CPF has 11 digits or is a repeated sequence (such as "111.111.111-11")
+    // Verifica se o CPF tem 11 dígitos ou é uma sequência repetida (tipo "111.111.111-11").
+    // Checks if the CPF has 11 digits or is a repeated sequence (such as "111.111.111-11").
     if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) {
         return false;
     }
 
-    // Validação do primeiro dígito verificador
-    // Validation of the first verifier digit
+    // Validação do primeiro dígito verificador.
+    // Validation of the first verifier digit.
     let sum = 0;
     for (let i = 0; i < 9; i++) {
         sum += parseInt(cpf.charAt(i)) * (10 - i);
@@ -187,8 +186,8 @@ function validateCPF(cpf) {
         return false;
     }
 
-    // Validação do segundo dígito verificador
-    // Validation of the second verifier digit
+    // Validação do segundo dígito verificador.
+    // Validation of the second verifier digit.
     sum = 0;
     for (let i = 0; i < 10; i++) {
         sum += parseInt(cpf.charAt(i)) * (11 - i);
@@ -208,7 +207,7 @@ input.addEventListener('input', () => formatCpf());
 
 input.addEventListener('focus', () => {
     placeholder.style.fontSize = '0.75rem';
-    placeholder.style.top = '7.75rem';
+    placeholder.style.top = '7.5rem';
     placeholder.style.transition = '0.2s';
 
 });
@@ -217,8 +216,8 @@ input.addEventListener('blur', () => {
     
     // reposition placeholder when input text is empty.
     if(!input.value){
-        placeholder.style.fontSize = '0.9rem';
-        placeholder.style.top = '9.5rem';
+        placeholder.style.fontSize = '0.875rem';
+        placeholder.style.top = '9rem';
         placeholder.style.transition = '0.2s';
     }
     // check that the cpf is valid.

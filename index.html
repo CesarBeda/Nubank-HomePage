@@ -9,15 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
+
 <body>
     <header>
-        <nav>
+        <nav class="header-menu">
             <ul>
                 <li>
                     <a href="https://nubank.com.br/">
-                        <img src="/assets/icons/logo.svg" alt="">
+                        <svg width="44" height="24" viewBox="0 0 44 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.10243 2.28935C9.478 0.844177 11.3027 0 13.4463 0C17.6224 0 20.3912 3.04906 20.9209 7.61677C21.0926 9.10012 21.0911 11.1914 21.0894 13.6137C21.0891 13.8621 21.089 14.114 21.089 14.3691V23.4433H15.3461V16.7318C15.3461 16.7318 15.3344 10.9876 15.2993 9.91403C15.1452 5.23837 12.3771 2.30042 8.10182 2.29726C6.81194 3.66004 6.1208 5.32629 6.01887 7.87403C6.00486 8.22937 6.00839 9.48892 6.01303 11.149C6.01544 12.0091 6.01815 12.9767 6.01887 13.9818C6.02313 18.3565 6.01887 23.4443 6.01887 23.4443H0.276001V13.1152C0.276001 12.7613 0.269551 12.4044 0.263076 12.046C0.250051 11.3252 0.236924 10.5989 0.276001 9.8796C0.340886 8.68058 0.548307 7.50187 1.10781 6.40689C2.38849 3.89835 5.01262 2.2832 7.81015 2.2832C7.90788 2.2832 8.00568 2.28525 8.10243 2.28935Z" fill="#820AD1"/>
+                            <path d="M43.724 14.1204C43.7631 13.4012 43.7499 12.6747 43.737 11.954C43.7304 11.5956 43.724 11.2387 43.724 10.8848V0.555653H37.9812C37.9812 0.555653 37.9769 5.6435 37.9812 10.0181C37.9818 11.0232 37.9845 11.9908 37.9869 12.8509C37.9916 14.511 37.9951 15.7706 37.9812 16.1259C37.8792 18.6737 37.188 20.3399 35.8982 21.7028C31.623 21.6995 28.855 18.7616 28.7008 14.086C28.6657 13.0124 28.6509 10.3484 28.6509 7.26286V0.55127L22.9122 0.556632V9.6309C22.9122 9.88598 22.912 10.1378 22.9119 10.3863C22.9101 12.8086 22.9086 14.8998 23.0803 16.3832C23.6089 20.951 26.3777 24 30.5538 24C32.6975 24 34.5222 23.1558 35.8977 21.7106C35.9944 21.7148 36.0921 21.7168 36.1899 21.7168C38.9874 21.7168 41.6115 20.1017 42.8922 17.5931C43.4517 16.4981 43.6591 15.3194 43.724 14.1204Z" fill="#820AD1"/>
+                            </svg>
                     </a>
                 </li>
                 <li>
@@ -43,93 +47,95 @@
                     <a href="https://nubank.com.br/perguntas/">Perguntas</a>
                 </li>
             </ul>
-            <button>
+            <a>
                 Login
-                <img src="/assets/icons/login-arrow.svg" alt="">
-            </button>
-            
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3376 0.456192L15.4545 0.456192C17.7019 0.456192 19.5238 2.27807 19.5238 4.52546V15.4346C19.5238 17.6819 17.7019 19.5038 15.4545 19.5038H12.3376V17.599H15.4545C16.6499 17.599 17.619 16.63 17.619 15.4346V4.52546C17.619 3.33004 16.6499 2.36095 15.4545 2.36095H12.3376V0.456192ZM9.33139 5.02085L14.2619 9.95136L9.36 15.2989L7.9559 14.0118L10.7787 10.9324H0.476135V9.02762H10.6444L7.98452 6.36773L9.33139 5.02085Z" fill="currentColor"/>
+                </svg>
+            </a>
         </nav>
-    </header>
-    <!-- Drop Down Menu -->
-    <nav class="menu-dropdown">
-       <div id="submenu-1" class="submenu">
-            <ul>
-                <p>Nubank</p>
-                <li><a href="">Conta do Nubank</a></li>
-                <li><a href="">Cartão de crédito</a></li>
-                <li><a href="">Experiência Nubank+</a></li>
-                <li><a href="">Função Construir Limite</a></li>
-                <li><a href="">Tudo Sobre Pix</a></li>
-            </ul>
-            <ul>
-                <p>Nubank Ultravioleta</p>
-                <li><a href="">Experiência Ultravioleta</a></li>
-                <li><a href="">Cartão Black Ultravioleta</a></li>
-                <li><a href="">Espaço Família</a></li>
-                <li><a href="">NuTag</a></li>
-                <li><a href="">Atendimento Ultravioleta</a></li>
-                <li><a href="">Central de Proteção</a></li>
-                <li><a href="">Mais Benefícios</a></li>
-            </ul>
-            <ul>
-                <p>Nubank Seguros</p>
-                <li><a href="">Seguro de Vida</a></li>
-                <li><a href="">Seguro de Celular</a></li>
-            </ul>
-            <ul>
-                <p>Outros produtos</p>
-                <li><a href="">Empréstimos</a></li>
-                <li><a href="">Investimentos</a></li>
-                <li><a href="">Shopping</a></li>
-            </ul>
-       </div>
-        <div id="submenu-2" class="submenu">
-            <ul>
-                <p>Nubank PJ</p>
-                <li><a href="#">Conta PJ</a></li>
-                <li><a href="#">Cartão de Crédito PJ</a></li>
-            </ul>
-            <ul> 
-                <p>Pagamentos</p>
-                <li><a href="#">Tap to Pay</a></li>
-                <li><a href="#">Tap to Pay no Iphone</a></li>
-            </ul>
-        </div>
-        <div id="submenu-3" class="submenu">
-            <ul>
-                <p>Sobre o Nu</p>
-                <li><a href="">Sobre o Nu</a></li>
-                <li><a href="">Sala de Imprensa</a></li>
-                <li><a href="">Carreiras</a></li>
-                <li><a href="">ESG</a></li>
-                <li><a href="">Investidores</a></li>
-                <li><a href="">Viva o Mundo Nu</a></li>
-                <li><a href="">Segurança</a></li>
-            </ul>
-            <ul>
-                <p>Outros Canais</p>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Newsletter</a></li>
-                <li><a href="">Comunidade</a></li>
-                <li><a href="">InvestNews</a></li>
-            </ul>
-            <ul>
-                <p>Nubank pelo Mundo</p>
-                <li><a href="">México</a></li>
-                <li><a href="">Colômbia</a></li>
-                <li><a href="">Nu Internacional</a></li>
-            </ul>
-        </div>
-    </nav>
+        <!-- Drop Down Menu -->
+        <nav class="menu-dropdown">
+            <div id="submenu-1" class="submenu">
+                <ul>
+                    <p>Nubank</p>
+                    <li><a href="https://nubank.com.br/conta/" target="_blank">Conta do Nubank</a></li>
+                    <li><a href="#">Cartão de crédito</a></li>
+                    <li><a href="">Experiência Nubank+</a></li>
+                    <li><a href="">Função Construir Limite</a></li>
+                    <li><a href="">Tudo Sobre Pix</a></li>
+                </ul>
+                <ul>
+                    <p>Nubank Ultravioleta</p>
+                    <li><a href="">Experiência Ultravioleta</a></li>
+                    <li><a href="">Cartão Black Ultravioleta</a></li>
+                    <li><a href="">Espaço Família</a></li>
+                    <li><a href="">NuTag</a></li>
+                    <li><a href="">Atendimento Ultravioleta</a></li>
+                    <li><a href="">Central de Proteção</a></li>
+                    <li><a href="">Mais Benefícios</a></li>
+                </ul>
+                <ul>
+                    <p>Nubank Seguros</p>
+                    <li><a href="">Seguro de Vida</a></li>
+                    <li><a href="">Seguro de Celular</a></li>
+                </ul>
+                <ul>
+                    <p>Outros produtos</p>
+                    <li><a href="">Empréstimos</a></li>
+                    <li><a href="">Investimentos</a></li>
+                    <li><a href="">Shopping</a></li>
+                </ul>
+            </div>
+            <div id="submenu-2" class="submenu">
+                <ul>
+                    <p>Nubank PJ</p>
+                    <li><a href="#">Conta PJ</a></li>
+                    <li><a href="#">Cartão de Crédito PJ</a></li>
+                </ul>
+                <ul> 
+                    <p>Pagamentos</p>
+                    <li><a href="#">Tap to Pay</a></li>
+                    <li><a href="#">Tap to Pay no Iphone</a></li>
+                </ul>
+            </div>
+            <div id="submenu-3" class="submenu">
+                <ul>
+                    <p>Sobre o Nu</p>
+                    <li><a href="">Sobre o Nu</a></li>
+                    <li><a href="">Sala de Imprensa</a></li>
+                    <li><a href="">Carreiras</a></li>
+                    <li><a href="">ESG</a></li>
+                    <li><a href="">Investidores</a></li>
+                    <li><a href="">Viva o Mundo Nu</a></li>
+                    <li><a href="">Segurança</a></li>
+                </ul>
+                <ul>
+                    <p>Outros Canais</p>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Newsletter</a></li>
+                    <li><a href="">Comunidade</a></li>
+                    <li><a href="">InvestNews</a></li>
+                </ul>
+                <ul>
+                    <p>Nubank pelo Mundo</p>
+                    <li><a href="">México</a></li>
+                    <li><a href="">Colômbia</a></li>
+                    <li><a href="">Nu Internacional</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>   
 
     <main>
-        <section class="header">
-            <div class="text-header">
-                <h1>100 milhões de clientes. Você no centro de tudo.</h1>
+        <section class="hero-section">
+            <div class="text-hero-section">
+                <h1>100 milhões de clientes.<br>Você no centro de tudo.</h1>
                 <h2>Em cada produto ou solução que <br> lançamos, tudo é pensado para abrir N <br>possibilidades na sua vida.</h2>
             </div>
-            <div class="card-header">
-                <h1>Peça sua conta e cartão <br> de crédito do Nubank</h1>
+
+            <div class="card-hero-section">
+                <h3>Peça sua conta e cartão <br> de crédito do Nubank</h3>
                 <p id="placeholder-cpf">Digite seu CPF</p>
                 <input type="text" id="input-cpf">
                 <div class="input-icons">
@@ -164,710 +170,312 @@
         <!-- Carousel -->
         <section class="carousel">
             <div class="container-cards">
-              <div class="carousel-track">
-                <div class="carousel-cards">
-                    <h1>
+                <div class="carousel-track">
+                    <!-- Card 1 -->
+                    <div class="carousel-cards">
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M17.7752 9.89099C17.9221 9.28471 18 8.65145 18 8C18 3.58172 14.4183 0 10 0C5.58172 0 2 3.58172 2 8C2 9.01667 2.18965 9.98904 2.53549 10.8837C2.16479 11.1392 1.82666 11.4462 1.53239 11.7993L1.15889 12.2475C0.410081 13.1461 0 14.2787 0 15.4484V20.0002H12.8431C14.1692 20.0002 15.441 19.4734 16.3787 18.5358L19.7071 15.2073C20.9261 13.9884 20.9261 12.0121 19.7071 10.7931C19.1677 10.2537 18.48 9.953 17.7752 9.89099ZM4.37788 10.1003C4.13357 9.44663 4 8.73891 4 8C4 4.68629 6.68629 2 10 2C13.3137 2 16 4.68629 16 8C16 8.9933 15.7586 9.93023 15.3313 10.7553C15.3184 10.7678 15.3056 10.7804 15.2929 10.7931L13.8908 12.1952C13.7711 11.7644 13.5576 11.3727 13.2739 11.0432C13.4819 10.7655 13.6317 10.4393 13.7034 10.0807C13.9652 8.7717 13.1028 7.50234 11.7894 7.26354L9.06791 6.76872C8.85474 6.72997 8.71477 6.52395 8.75726 6.31149C8.79349 6.13037 8.95252 6 9.13722 6H13V4H11V3H9V4.00391C7.92116 4.06547 7.01027 4.84841 6.7961 5.91926C6.53429 7.2283 7.39671 8.49766 8.71014 8.73646L11.4316 9.23128C11.6448 9.27003 11.7847 9.47605 11.7423 9.68851C11.706 9.86963 11.547 10 11.3623 10L5.3735 10.0002C5.03618 10.0002 4.70281 10.0343 4.37788 10.1003ZM16.7071 12.2073C17.145 11.7694 17.855 11.7694 18.2929 12.2073C18.7308 12.6452 18.7308 13.3552 18.2929 13.7931L14.9645 17.1215C14.4019 17.6842 13.6388 18.0002 12.8431 18.0002H2V15.4484C2 14.7466 2.24605 14.067 2.69534 13.5279L3.06884 13.0797C3.63882 12.3957 4.48316 12.0002 5.3735 12.0002H11C11.5523 12.0002 12 12.4479 12 13.0002C12 13.4789 11.6637 13.879 11.2145 13.9772C11.092 13.9924 10.968 14.0002 10.8431 14.0002H5.5V16.0002H11C11.187 16.0002 11.3699 15.9831 11.5474 15.9504C12.6132 15.7988 13.6086 15.3058 14.3787 14.5358L16.7071 12.2073Z" fill="#111111"></path>
+                            <path d="M17.7752 9.89099C17.9221 9.28471 18 8.65145 18 8C18 3.58172 14.4183 0 10 0C5.58172 0 2 3.58172 2 8C2 9.01667 2.18965 9.98904 2.53549 10.8837C2.16479 11.1392 1.82666 11.4462 1.53239 11.7993L1.15889 12.2475C0.410081 13.1461 0 14.2787 0 15.4484V20.0002H12.8431C14.1692 20.0002 15.441 19.4734 16.3787 18.5358L19.7071 15.2073C20.9261 13.9884 20.9261 12.0121 19.7071 10.7931C19.1677 10.2537 18.48 9.953 17.7752 9.89099ZM4.37788 10.1003C4.13357 9.44663 4 8.73891 4 8C4 4.68629 6.68629 2 10 2C13.3137 2 16 4.68629 16 8C16 8.9933 15.7586 9.93023 15.3313 10.7553C15.3184 10.7678 15.3056 10.7804 15.2929 10.7931L13.8908 12.1952C13.7711 11.7644 13.5576 11.3727 13.2739 11.0432C13.4819 10.7655 13.6317 10.4393 13.7034 10.0807C13.9652 8.7717 13.1028 7.50234 11.7894 7.26354L9.06791 6.76872C8.85474 6.72997 8.71477 6.52395 8.75726 6.31149C8.79349 6.13037 8.95252 6 9.13722 6H13V4H11V3H9V4.00391C7.92116 4.06547 7.01027 4.84841 6.7961 5.91926C6.53429 7.2283 7.39671 8.49766 8.71014 8.73646L11.4316 9.23128C11.6448 9.27003 11.7847 9.47605 11.7423 9.68851C11.706 9.86963 11.547 10 11.3623 10L5.3735 10.0002C5.03618 10.0002 4.70281 10.0343 4.37788 10.1003ZM16.7071 12.2073C17.145 11.7694 17.855 11.7694 18.2929 12.2073C18.7308 12.6452 18.7308 13.3552 18.2929 13.7931L14.9645 17.1215C14.4019 17.6842 13.6388 18.0002 12.8431 18.0002H2V15.4484C2 14.7466 2.24605 14.067 2.69534 13.5279L3.06884 13.0797C3.63882 12.3957 4.48316 12.0002 5.3735 12.0002H11C11.5523 12.0002 12 12.4479 12 13.0002C12 13.4789 11.6637 13.879 11.2145 13.9772C11.092 13.9924 10.968 14.0002 10.8431 14.0002H5.5V16.0002H11C11.187 16.0002 11.3699 15.9831 11.5474 15.9504C12.6132 15.7988 13.6086 15.3058 14.3787 14.5358L16.7071 12.2073Z" fill="#111111"></path>
                         </svg>
-                        Empréstimo
-                    </h1>
-                    <p>
-                        Transparentes, seguros e do seu jeito. Opções de empréstimos que deixam você no controle do início ao fim.
-                    </p>
-                    <a href="https://nubank.com.br/emprestimo/">
-                        <button>
+                        <h3>Empréstimo</h3>
+                        <p>
+                            Transparentes, seguros e do seu jeito. Opções de empréstimos que deixam você no controle do início ao fim.
+                        </p>
+                        <a href="https://nubank.com.br/emprestimo/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="carousel-cards">
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path d="M17.7752 9.89099C17.9221 9.28471 18 8.65145 18 8C18 3.58172 14.4183 0 10 0C5.58172 0 2 3.58172 2 8C2 9.01667 2.18965 9.98904 2.53549 10.8837C2.16479 11.1392 1.82666 11.4462 1.53239 11.7993L1.15889 12.2475C0.410081 13.1461 0 14.2787 0 15.4484V20.0002H12.8431C14.1692 20.0002 15.441 19.4734 16.3787 18.5358L19.7071 15.2073C20.9261 13.9884 20.9261 12.0121 19.7071 10.7931C19.1677 10.2537 18.48 9.953 17.7752 9.89099ZM4.37788 10.1003C4.13357 9.44663 4 8.73891 4 8C4 4.68629 6.68629 2 10 2C13.3137 2 16 4.68629 16 8C16 8.9933 15.7586 9.93023 15.3313 10.7553C15.3184 10.7678 15.3056 10.7804 15.2929 10.7931L13.8908 12.1952C13.7711 11.7644 13.5576 11.3727 13.2739 11.0432C13.4819 10.7655 13.6317 10.4393 13.7034 10.0807C13.9652 8.7717 13.1028 7.50234 11.7894 7.26354L9.06791 6.76872C8.85474 6.72997 8.71477 6.52395 8.75726 6.31149C8.79349 6.13037 8.95252 6 9.13722 6H13V4H11V3H9V4.00391C7.92116 4.06547 7.01027 4.84841 6.7961 5.91926C6.53429 7.2283 7.39671 8.49766 8.71014 8.73646L11.4316 9.23128C11.6448 9.27003 11.7847 9.47605 11.7423 9.68851C11.706 9.86963 11.547 10 11.3623 10L5.3735 10.0002C5.03618 10.0002 4.70281 10.0343 4.37788 10.1003ZM16.7071 12.2073C17.145 11.7694 17.855 11.7694 18.2929 12.2073C18.7308 12.6452 18.7308 13.3552 18.2929 13.7931L14.9645 17.1215C14.4019 17.6842 13.6388 18.0002 12.8431 18.0002H2V15.4484C2 14.7466 2.24605 14.067 2.69534 13.5279L3.06884 13.0797C3.63882 12.3957 4.48316 12.0002 5.3735 12.0002H11C11.5523 12.0002 12 12.4479 12 13.0002C12 13.4789 11.6637 13.879 11.2145 13.9772C11.092 13.9924 10.968 14.0002 10.8431 14.0002H5.5V16.0002H11C11.187 16.0002 11.3699 15.9831 11.5474 15.9504C12.6132 15.7988 13.6086 15.3058 14.3787 14.5358L16.7071 12.2073Z" fill="#111111"></path>
                         </svg>
-                        NuConsignado
-                    </h1>
-                    <p>
-                        O empréstimo consignado para servidores públicos federais e, em breve, para aposentados e pensionistas do INSS.
-                    </p>
-                    <a href="https://nubank.com.br/emprestimo/#section-consignado">
-                        <button>
+                        <h3>NuConsignado</h3>
+                        <p>
+                            O empréstimo consignado para servidores públicos federais e, em breve, para aposentados e pensionistas do INSS.
+                        </p>
+                        <a href="https://nubank.com.br/emprestimo/#section-consignado">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="carousel-cards">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M17.748 10C17.9125 9.36076 18 8.6906 18 8C18 3.58172 14.4183 0 10 0C5.58172 0 2 3.58172 2 8C2 8.6906 2.08751 9.36076 2.25203 10H0V12H1V20H19V12H20V10H17.748ZM15.6586 10H13.7181C13.9295 8.71991 13.0758 7.49743 11.7894 7.26354L9.06789 6.76872C8.85473 6.72997 8.71476 6.52395 8.75725 6.31149C8.79347 6.13037 8.9525 6 9.13721 6H13V4H11V3H8.99999V4.00391C7.92114 4.06547 7.01026 4.84841 6.79609 5.91926C6.53428 7.2283 7.3967 8.49766 8.71012 8.73646L11.4316 9.23128C11.6448 9.27003 11.7847 9.47605 11.7422 9.68851C11.706 9.86963 11.547 10 11.3623 10H4.34141C4.12031 9.37444 4 8.70127 4 8C4 4.68629 6.68629 2 10 2C13.3137 2 16 4.68629 16 8C16 8.70127 15.8797 9.37444 15.6586 10ZM17 12V18H3V12H17Z" fill="#111111">
                             </path>
                         </svg>
-                        Investimentos
-                    </h1>
-                    <p>
-                        Investimentos a partir de R$ 1 e opções para todos os perfis. Uma experiência fácil, segura e transparente.
-                    </p>
-                    <a href="https://nubank.com.br/investimentos/">
-                        <button>
+                        <h3> Investimentos </h3>
+                        <p>
+                            Investimentos a partir de R$ 1 e opções para todos os perfis. Uma experiência fácil, segura e transparente.
+                        </p>
+                        <a href="https://nubank.com.br/investimentos/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="carousel-cards">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M17.748 10C17.9125 9.36076 18 8.6906 18 8C18 3.58172 14.4183 0 10 0C5.58172 0 2 3.58172 2 8C2 8.6906 2.08751 9.36076 2.25203 10H0V12H1V20H19V12H20V10H17.748ZM15.6586 10H13.7181C13.9295 8.71991 13.0758 7.49743 11.7894 7.26354L9.06789 6.76872C8.85473 6.72997 8.71476 6.52395 8.75725 6.31149C8.79347 6.13037 8.9525 6 9.13721 6H13V4H11V3H8.99999V4.00391C7.92114 4.06547 7.01026 4.84841 6.79609 5.91926C6.53428 7.2283 7.3967 8.49766 8.71012 8.73646L11.4316 9.23128C11.6448 9.27003 11.7847 9.47605 11.7422 9.68851C11.706 9.86963 11.547 10 11.3623 10H4.34141C4.12031 9.37444 4 8.70127 4 8C4 4.68629 6.68629 2 10 2C13.3137 2 16 4.68629 16 8C16 8.70127 15.8797 9.37444 15.6586 10ZM17 12V18H3V12H17Z" fill="#111111">
                             </path>
                         </svg>
-                        Caixinhas
-                    </h1>
-                    <p>
-                        Organize e guarde dinheiro para seus planos. Crie Caixinhas personalizadas para cada um de seus objetivos.
-                    </p>
-                    <a href="https://nubank.com.br/investimentos/#section-caixinhas">
-                        <button>
+                        <h3> Caixinhas </h3>
+                        <p>
+                            Organize e guarde dinheiro para seus planos. Crie Caixinhas personalizadas para cada um de seus objetivos.
+                        </p>
+                        <a href="https://nubank.com.br/investimentos/#section-caixinhas">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="carousel-cards">
                         <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M10 8L10 5L8 5L8 8H10Z" fill="#111111"></path>
                             <path d="M12 3.49691e-07L4 0C1.79086 -9.65645e-08 6.21101e-07 1.79086 5.24537e-07 4L0 16C-9.65645e-08 18.2091 1.79086 20 4 20H12C14.2091 20 16 18.2091 16 16V4C16 1.79086 14.2091 4.46256e-07 12 3.49691e-07ZM14 4L14 16C14 17.1046 13.1046 18 12 18H4C2.89543 18 2 17.1046 2 16L2 4C2 2.89543 2.89543 2 4 2L12 2C13.1046 2 14 2.89543 14 4Z" fill="#111111"></path>
                         </svg>
-                        Cartão de crédito
-                    </h1>
-                    <p>
-                        Um cartão completo, moderno e gratuito pra você. E com anuidade zero. Fique no controle da sua vida financeira.
-                    </p>
-                    <a href="https://nubank.com.br/cartao/">
-                        <button>
+                        <h3> Cartão de crédito </h3>
+                        <p>
+                            Um cartão completo, moderno e gratuito pra você. E com anuidade zero. Fique no controle da sua vida financeira.
+                        </p>
+                        <a href="https://nubank.com.br/cartao/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="carousel-cards">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M14.8282 2.10053C13.2661 0.538431 10.7334 0.538431 9.17135 2.10053L2.10028 9.1716C0.538187 10.7337 0.538187 13.2664 2.10028 14.8284L9.17135 21.8995C10.7334 23.4616 13.2661 23.4616 14.8282 21.8995L21.8993 14.8285C23.4614 13.2664 23.4614 10.7337 21.8993 9.1716L14.8282 2.10053ZM15.9263 6.02704C15.279 6.11453 14.6739 6.41167 14.2069 6.87869L11.9998 9.08579L9.79267 6.87869C9.32565 6.41167 8.72052 6.11453 8.07327 6.02704L10.5856 3.51474C11.3666 2.73369 12.6329 2.73369 13.414 3.51474L15.9263 6.02704ZM17.8993 8.00001L20.4851 10.5858C21.2661 11.3669 21.2661 12.6332 20.4851 13.4142L17.8993 16H16.3282C16.063 16 15.8086 15.8946 15.6211 15.7071L13.414 13.5C12.6329 12.719 11.3666 12.719 10.5856 13.5L8.37846 15.7071C8.19092 15.8946 7.93657 16 7.67135 16H6.10027L3.5145 13.4142C2.73345 12.6332 2.73345 11.3669 3.5145 10.5858L6.1003 8.00001H7.67135C7.93657 8.00001 8.19092 8.10536 8.37846 8.2929L10.5856 10.5C11.3666 11.2811 12.6329 11.2811 13.414 10.5L15.6211 8.2929C15.8086 8.10536 16.063 8.00001 16.3282 8.00001H17.8993ZM10.5856 20.4853L8.07324 17.973C8.7205 17.8855 9.32565 17.5884 9.79267 17.1213L11.9998 14.9142L14.2069 17.1213C14.6739 17.5884 15.2791 17.8855 15.9263 17.973L13.414 20.4853C12.6329 21.2664 11.3666 21.2664 10.5856 20.4853Z" fill="#111111"></path>
                         </svg>
-                        Pix no crédito
-                    </h1>
-                    <p>
-                        Faça um Pix e pague com o cartão de crédito: não use o saldo da sua conta e concentre os gastos no cartão.
-                    </p>
-                    <a href="https://blog.nubank.com.br/pix-no-credito-no-nubank-tudo-sobre/">
-                        <button>
+                        <h3>Pix no crédito </h3>
+                        <p>
+                            Faça um Pix e pague com o cartão de crédito: não use o saldo da sua conta e concentre os gastos no cartão.
+                        </p>
+                        <a href="https://blog.nubank.com.br/pix-no-credito-no-nubank-tudo-sobre/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="carousel-cards">
                         <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M0 0V10H2V0H0Z" fill="#111111"></path>
                             <path d="M10 0V10H12V0H10Z" fill="#111111"></path>
                             <path d="M4 0H8V10H4V0Z" fill="#111111"></path>
                             <path d="M14 0V10H18V0H14Z" fill="#111111"><path>
                         </svg>
-                        Boleto no crédito
-                    </h1>
-                    <p>
-                        Pague ou parcele em até 12 vezes seus boletos com o cartão de crédito e tenha mais controle sobre o seu dinheiro.
-                    </p>
-                    <a href="https://blog.nubank.com.br/como-pagar-boletos-com-o-cartao-de-credito-nubank/">
-                        <button>
+                        <h3> Boleto no crédito </h3>
+                        <p>
+                            Pague ou parcele em até 12 vezes seus boletos com o cartão de crédito e tenha mais controle sobre o seu dinheiro.
+                        </p>
+                        <a href="https://blog.nubank.com.br/como-pagar-boletos-com-o-cartao-de-credito-nubank/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="carousel-cards">
                         <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M10 8L10 5L8 5L8 8H10Z" fill="#111111"></path>
                             <path d="M12 3.49691e-07L4 0C1.79086 -9.65645e-08 6.21101e-07 1.79086 5.24537e-07 4L0 16C-9.65645e-08 18.2091 1.79086 20 4 20H12C14.2091 20 16 18.2091 16 16V4C16 1.79086 14.2091 4.46256e-07 12 3.49691e-07ZM14 4L14 16C14 17.1046 13.1046 18 12 18H4C2.89543 18 2 17.1046 2 16L2 4C2 2.89543 2.89543 2 4 2L12 2C13.1046 2 14 2.89543 14 4Z" fill="#111111"></path>
                         </svg>
-                        Parcelamento de compras
-                    </h1>
-                    <p>
-                        Parcele suas compras à vista feitas em estabelecimentos físicos e virtuais direto no app do Nubank.
-                    </p>
-                    <a href="https://blog.nubank.com.br/quando-vale-a-pena-usar-parcelamento-de-compras-especificas-nubank/">
-                        <button>
+                        <h3> Parcelamento de compras </h3>
+                        <p>
+                            Parcele suas compras à vista feitas em estabelecimentos físicos e virtuais direto no app do Nubank.
+                        </p>
+                        <a href="https://blog.nubank.com.br/quando-vale-a-pena-usar-parcelamento-de-compras-especificas-nubank/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 9 -->    
+                    <div class="carousel-cards">
                         <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M10 8L10 5L8 5L8 8H10Z" fill="#111111"></path>
                             <path d="M12 3.49691e-07L4 0C1.79086 -9.65645e-08 6.21101e-07 1.79086 5.24537e-07 4L0 16C-9.65645e-08 18.2091 1.79086 20 4 20H12C14.2091 20 16 18.2091 16 16V4C16 1.79086 14.2091 4.46256e-07 12 3.49691e-07ZM14 4L14 16C14 17.1046 13.1046 18 12 18H4C2.89543 18 2 17.1046 2 16L2 4C2 2.89543 2.89543 2 4 2L12 2C13.1046 2 14 2.89543 14 4Z" fill="#111111"></path>
                         </svg>
-                        Cartão Virtual
-                    </h1>
-                    <p>
-                        Crie novos cartões virtuais de crédito ou débito no seu app e proteja ainda mais suas compras online.
-                    </p>
-                    <a href="https://blog.nubank.com.br/cartao-virtual-nubank-tudo-sobre/">
-                        <button>
+                        <h3> Cartão Virtual </h3> 
+                        <p>
+                            Crie novos cartões virtuais de crédito ou débito no seu app e proteja ainda mais suas compras online.
+                        </p>
+                        <a href="https://blog.nubank.com.br/cartao-virtual-nubank-tudo-sobre/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 10 -->
+                    <div class="carousel-cards">
                         <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M10 8L10 5L8 5L8 8H10Z" fill="#111111"></path>
                             <path d="M12 3.49691e-07L4 0C1.79086 -9.65645e-08 6.21101e-07 1.79086 5.24537e-07 4L0 16C-9.65645e-08 18.2091 1.79086 20 4 20H12C14.2091 20 16 18.2091 16 16V4C16 1.79086 14.2091 4.46256e-07 12 3.49691e-07ZM14 4L14 16C14 17.1046 13.1046 18 12 18H4C2.89543 18 2 17.1046 2 16L2 4C2 2.89543 2.89543 2 4 2L12 2C13.1046 2 14 2.89543 14 4Z" fill="#111111"></path>
                         </svg>
-                        Cartão Adicional
-                    </h1>
-                    <p>
-                        Cartão de crédito físico adicional para ser compartilhado com outra pessoa utilizando o mesmo limite.
-                    </p>
-                    <a href="https://blog.nubank.com.br/cartao-de-credito-adicional-do-nubank-tudo-o-que-voce-precisa-saber/">
-                        <button>
+                        <h3> Cartão Adicional </h3> 
+                        <p>
+                            Cartão de crédito físico adicional para ser compartilhado com outra pessoa utilizando o mesmo limite.
+                        </p>
+                        <a href="https://blog.nubank.com.br/cartao-de-credito-adicional-do-nubank-tudo-o-que-voce-precisa-saber/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 11 -->
+                    <div class="carousel-cards">
                         <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M10 8L10 5L8 5L8 8H10Z" fill="#111111"></path>
                             <path d="M12 3.49691e-07L4 0C1.79086 -9.65645e-08 6.21101e-07 1.79086 5.24537e-07 4L0 16C-9.65645e-08 18.2091 1.79086 20 4 20H12C14.2091 20 16 18.2091 16 16V4C16 1.79086 14.2091 4.46256e-07 12 3.49691e-07ZM14 4L14 16C14 17.1046 13.1046 18 12 18H4C2.89543 18 2 17.1046 2 16L2 4C2 2.89543 2.89543 2 4 2L12 2C13.1046 2 14 2.89543 14 4Z" fill="#111111"></path>
                         </svg>
-                        Carteira Digital
-                    </h1>
-                    <p>
-                        Armazene os dados do seu cartão de crédito nas carteiras digitais do Google Pay, Apple Pay e Samsung Pay.
-                    </p>
-                    <a href="https://blog.nubank.com.br/quais-carteiras-digitais-o-nubank-tem/">
-                        <button>
+                        <h3> Carteira Digital </h3>
+                        <p>
+                            Armazene os dados do seu cartão de crédito nas carteiras digitais do Google Pay, Apple Pay e Samsung Pay.
+                        </p>
+                        <a href="https://blog.nubank.com.br/quais-carteiras-digitais-o-nubank-tem/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 12 -->
+                    <div class="carousel-cards">
                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M10.0004 5.5778L12.6624 2.91574C13.9133 1.66489 15.9519 1.70003 17.1589 2.99325C18.3084 4.22493 18.2753 6.14599 17.084 7.33732L10.0003 14.421L2.91672 7.33732C1.72539 6.14599 1.69228 4.22493 2.84184 2.99325C4.04884 1.70003 6.08744 1.6649 7.33829 2.91575L10.0004 5.5778ZM10.0003 17.2494L18.4982 8.75154C20.4516 6.79813 20.5059 3.64818 18.621 1.62861C16.6419 -0.49186 13.2992 -0.549477 11.2482 1.50153L10.0003 2.74937L8.75251 1.50153C6.7015 -0.549471 3.35884 -0.491856 1.37973 1.62861C-0.505197 3.64818 -0.450903 6.79813 1.50251 8.75154L10.0003 17.2494Z" fill="#111111"></path>
                         </svg>
-                        Seguro de vida
-                    </h1>
-                    <p>
-                        Proteja você e quem você ama por a partir de R$4 por mês. Escolha o plano que se encaixa ao seu perfil.
-                    </p>
-                    <a href="https://nubank.com.br/seguros/">
-                        <button>
+                        <h3>Seguro de vida</h3>
+                        <p>
+                            Proteja você e quem você ama por a partir de R$4 por mês. Escolha o plano que se encaixa ao seu perfil.
+                        </p>
+                        <a href="https://nubank.com.br/seguros/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 13 -->
+                    <div class="carousel-cards">
                         <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 16H5V18H9V16Z" fill="#111111"></path><path d="M0 4V18C0 20.2091 1.79086 22 4 22H10C12.2091 22 14 20.2091 14 18V4C14 1.79086 12.2091 0 10 0H4C1.79086 0 0 1.79086 0 4ZM4 2H10C11.1046 2 12 2.89543 12 4V18C12 19.1046 11.1046 20 10 20H4C2.89543 20 2 19.1046 2 18V4C2 2.89543 2.89543 2 4 2Z" fill="#111111"></path></svg>
-                        Seguro celular
-                    </h1>
-                    <p>
-                        A mais completa proteção do mercado, seja para furto ou roubo de celular, tela quebrada ou oxidada.
-                    </p>
-                    <a href="https://nubank.com.br/seguros/celular/">
-                        <button>
+                        <h3> Seguro celular </h3>
+                        <p>
+                            A mais completa proteção do mercado, seja para furto ou roubo de celular, tela quebrada ou oxidada.
+                        </p>
+                        <a href="https://nubank.com.br/seguros/celular/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 14 -->                  
+                    <div class="carousel-cards">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12H8V10H5V12Z" fill="#111111"></path><path d="M4 0C1.79086 0 0 1.79086 0 4V18L18 18V4C18 1.79086 16.2091 0 14 0H4ZM2 6V4C2 2.89543 2.89543 2 4 2H5V6H2ZM11 2V6H7V2L11 2ZM2 8L16 8V16H13V10H11V16H2L2 8ZM13 6V2H14C15.1046 2 16 2.89543 16 4V6H13Z" fill="#111111"></path></svg>
-                        Conta
-                    </h1>
-                    <p>
-                        Receba, movimente e guarde seu dinheiro de um jeito simples e com rendimento maior que a poupança.
-                    </p>
-                    <a href="https://nubank.com.br/conta/">
-                        <button>
+                        <h3>Conta</h3>
+                        <p>
+                            Receba, movimente e guarde seu dinheiro de um jeito simples e com rendimento maior que a poupança.
+                        </p>
+                        <a href="https://nubank.com.br/conta/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 15 -->
+                    <div class="carousel-cards">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M12.6371 17.5529C10.7801 18.2013 8.74928 18.1428 6.93265 17.3886C5.3031 16.7121 3.94834 15.5184 3.07176 14L5.5 14L5.5 12H1C0.447715 12 0 12.4477 0 13V19H2L2 16.0001C3.06696 17.4226 4.50177 18.545 6.16582 19.2358C8.4366 20.1785 10.9751 20.2516 13.2964 19.4411C15.6176 18.6306 17.5589 16.9934 18.7495 14.8422C19.94 12.6909 20.2963 10.1765 19.7503 7.77923C19.2042 5.38195 17.7942 3.26984 15.7895 1.84638C13.7847 0.422931 11.3259 -0.212083 8.88259 0.0626477C6.4393 0.33738 4.18286 1.5026 2.54431 3.33571C1.3565 4.66458 0.553754 6.2769 0.201999 8.00002H2.254C2.57097 6.7725 3.17772 5.62816 4.03545 4.66858C5.34628 3.20208 7.15144 2.26991 9.10607 2.05012C11.0607 1.83034 13.0278 2.33835 14.6316 3.47711C16.2353 4.61587 17.3634 6.30556 17.8002 8.22339C18.237 10.1412 17.952 12.1528 16.9996 13.8737C16.0471 15.5947 14.4941 16.9045 12.6371 17.5529Z" fill="#111111">
                             </path>
                             <path d="M10.9993 4.99978H8.99928V6.00372C7.92066 6.06549 7.01001 6.84836 6.79587 7.91904C6.53407 9.22808 7.39648 10.4974 8.70991 10.7362L11.4313 11.2311C11.6445 11.2698 11.7845 11.4758 11.742 11.6883C11.7058 11.8694 11.5468 11.9998 11.362 11.9998L7.49997 12L7.50007 14L8.99928 14V14.9998H10.9993V13.9999L11.3621 13.9998C12.5002 13.9998 13.48 13.1965 13.7032 12.0806C13.965 10.7715 13.1026 9.50212 11.7891 9.26331L9.06768 8.76851C8.85451 8.72975 8.71454 8.52373 8.75703 8.31128C8.79326 8.13016 8.95229 7.99978 9.137 7.99978H12.9998V5.99978H10.9993V4.99978Z" fill="#111111">
                             </path>
                         </svg>
-                        Assistente de pagamento
-                    </h1>
-                    <p>
-                        O seu assistente pessoal quando o assunto é pagar as contas do mês, desde o boleto de água até Pix para o professor de inglês.
-                    </p>
-                    <a href="https://nubank.com.br/conta/">
-                        <button>
+                        <h3>Assistente de pagamento</h3>
+                        <p>
+                            O seu assistente pessoal quando o assunto é pagar as contas do mês, desde o boleto de água até Pix para o professor de inglês.
+                        </p>
+                        <a href="https://nubank.com.br/conta/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
+                        </a>
+                    </div>
+                    <!-- Card 16 -->
+                    <div class="carousel-cards">
                         <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7.00007 4.50049V6.5H5.00007V4.50049C5.00007 2.328 6.78443 0.500488 9.00007 0.500488C11.2157 0.500488 13.0001 2.328 13.0001 4.50049V6.5H11.0001V4.50049C11.0001 3.41952 10.0981 2.50049 9.00007 2.50049C7.90201 2.50049 7.00007 3.41952 7.00007 4.50049Z" fill="#111111"></path><path d="M0.215582 16.2349L0.864487 6.50098H2.86893L2.21115 16.3679C2.1342 17.5223 3.0498 18.501 4.20672 18.501H13.7934C14.9503 18.501 15.8659 17.5223 15.789 16.3679L15.1311 6.50098H17.1355L17.7845 16.2349C17.9385 18.5436 16.1073 20.501 13.7934 20.501H4.20672C1.89287 20.501 0.0616726 18.5436 0.215582 16.2349Z" fill="#111111"></path></svg>
-                        Shopping
-                    </h1>
-                    <p>
-                        Um shopping que oferece tudo que você precisa: mais de 150 lojas parceiras, segurança e ótimos preços.
-                    </p>
-                    <a href="https://nubank.com.br/nu-shopping/">
-                        <button>
+                        <h3>Shopping</h3>
+                        <p>
+                            Um shopping que oferece tudo que você precisa: mais de 150 lojas parceiras, segurança e ótimos preços.
+                        </p>
+                        <a href="https://nubank.com.br/nu-shopping/">
                             Saiba mais
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
                                 <title>Internal Link</title>
                                 <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                             </svg>
-                        </button>
-                    </a>
-                </div>
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M17.7752 9.89099C17.9221 9.28471 18 8.65145 18 8C18 3.58172 14.4183 0 10 0C5.58172 0 2 3.58172 2 8C2 9.01667 2.18965 9.98904 2.53549 10.8837C2.16479 11.1392 1.82666 11.4462 1.53239 11.7993L1.15889 12.2475C0.410081 13.1461 0 14.2787 0 15.4484V20.0002H12.8431C14.1692 20.0002 15.441 19.4734 16.3787 18.5358L19.7071 15.2073C20.9261 13.9884 20.9261 12.0121 19.7071 10.7931C19.1677 10.2537 18.48 9.953 17.7752 9.89099ZM4.37788 10.1003C4.13357 9.44663 4 8.73891 4 8C4 4.68629 6.68629 2 10 2C13.3137 2 16 4.68629 16 8C16 8.9933 15.7586 9.93023 15.3313 10.7553C15.3184 10.7678 15.3056 10.7804 15.2929 10.7931L13.8908 12.1952C13.7711 11.7644 13.5576 11.3727 13.2739 11.0432C13.4819 10.7655 13.6317 10.4393 13.7034 10.0807C13.9652 8.7717 13.1028 7.50234 11.7894 7.26354L9.06791 6.76872C8.85474 6.72997 8.71477 6.52395 8.75726 6.31149C8.79349 6.13037 8.95252 6 9.13722 6H13V4H11V3H9V4.00391C7.92116 4.06547 7.01027 4.84841 6.7961 5.91926C6.53429 7.2283 7.39671 8.49766 8.71014 8.73646L11.4316 9.23128C11.6448 9.27003 11.7847 9.47605 11.7423 9.68851C11.706 9.86963 11.547 10 11.3623 10L5.3735 10.0002C5.03618 10.0002 4.70281 10.0343 4.37788 10.1003ZM16.7071 12.2073C17.145 11.7694 17.855 11.7694 18.2929 12.2073C18.7308 12.6452 18.7308 13.3552 18.2929 13.7931L14.9645 17.1215C14.4019 17.6842 13.6388 18.0002 12.8431 18.0002H2V15.4484C2 14.7466 2.24605 14.067 2.69534 13.5279L3.06884 13.0797C3.63882 12.3957 4.48316 12.0002 5.3735 12.0002H11C11.5523 12.0002 12 12.4479 12 13.0002C12 13.4789 11.6637 13.879 11.2145 13.9772C11.092 13.9924 10.968 14.0002 10.8431 14.0002H5.5V16.0002H11C11.187 16.0002 11.3699 15.9831 11.5474 15.9504C12.6132 15.7988 13.6086 15.3058 14.3787 14.5358L16.7071 12.2073Z" fill="#111111"></path>
-                        </svg>
-                        Empréstimo
-                    </h1>
-                    <p>
-                        Transparentes, seguros e do seu jeito. Opções de empréstimos que deixam você no controle do início ao fim.
-                    </p>
-                    <a href="https://nubank.com.br/emprestimo/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
+                        </a>
+                    </div>
 
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M17.7752 9.89099C17.9221 9.28471 18 8.65145 18 8C18 3.58172 14.4183 0 10 0C5.58172 0 2 3.58172 2 8C2 9.01667 2.18965 9.98904 2.53549 10.8837C2.16479 11.1392 1.82666 11.4462 1.53239 11.7993L1.15889 12.2475C0.410081 13.1461 0 14.2787 0 15.4484V20.0002H12.8431C14.1692 20.0002 15.441 19.4734 16.3787 18.5358L19.7071 15.2073C20.9261 13.9884 20.9261 12.0121 19.7071 10.7931C19.1677 10.2537 18.48 9.953 17.7752 9.89099ZM4.37788 10.1003C4.13357 9.44663 4 8.73891 4 8C4 4.68629 6.68629 2 10 2C13.3137 2 16 4.68629 16 8C16 8.9933 15.7586 9.93023 15.3313 10.7553C15.3184 10.7678 15.3056 10.7804 15.2929 10.7931L13.8908 12.1952C13.7711 11.7644 13.5576 11.3727 13.2739 11.0432C13.4819 10.7655 13.6317 10.4393 13.7034 10.0807C13.9652 8.7717 13.1028 7.50234 11.7894 7.26354L9.06791 6.76872C8.85474 6.72997 8.71477 6.52395 8.75726 6.31149C8.79349 6.13037 8.95252 6 9.13722 6H13V4H11V3H9V4.00391C7.92116 4.06547 7.01027 4.84841 6.7961 5.91926C6.53429 7.2283 7.39671 8.49766 8.71014 8.73646L11.4316 9.23128C11.6448 9.27003 11.7847 9.47605 11.7423 9.68851C11.706 9.86963 11.547 10 11.3623 10L5.3735 10.0002C5.03618 10.0002 4.70281 10.0343 4.37788 10.1003ZM16.7071 12.2073C17.145 11.7694 17.855 11.7694 18.2929 12.2073C18.7308 12.6452 18.7308 13.3552 18.2929 13.7931L14.9645 17.1215C14.4019 17.6842 13.6388 18.0002 12.8431 18.0002H2V15.4484C2 14.7466 2.24605 14.067 2.69534 13.5279L3.06884 13.0797C3.63882 12.3957 4.48316 12.0002 5.3735 12.0002H11C11.5523 12.0002 12 12.4479 12 13.0002C12 13.4789 11.6637 13.879 11.2145 13.9772C11.092 13.9924 10.968 14.0002 10.8431 14.0002H5.5V16.0002H11C11.187 16.0002 11.3699 15.9831 11.5474 15.9504C12.6132 15.7988 13.6086 15.3058 14.3787 14.5358L16.7071 12.2073Z" fill="#111111"></path>
-                        </svg>
-                        NuConsignado
-                    </h1>
-                    <p>
-                        O empréstimo consignado para servidores públicos federais e, em breve, para aposentados e pensionistas do INSS.
-                    </p>
-                    <a href="https://nubank.com.br/emprestimo/#section-consignado">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M17.748 10C17.9125 9.36076 18 8.6906 18 8C18 3.58172 14.4183 0 10 0C5.58172 0 2 3.58172 2 8C2 8.6906 2.08751 9.36076 2.25203 10H0V12H1V20H19V12H20V10H17.748ZM15.6586 10H13.7181C13.9295 8.71991 13.0758 7.49743 11.7894 7.26354L9.06789 6.76872C8.85473 6.72997 8.71476 6.52395 8.75725 6.31149C8.79347 6.13037 8.9525 6 9.13721 6H13V4H11V3H8.99999V4.00391C7.92114 4.06547 7.01026 4.84841 6.79609 5.91926C6.53428 7.2283 7.3967 8.49766 8.71012 8.73646L11.4316 9.23128C11.6448 9.27003 11.7847 9.47605 11.7422 9.68851C11.706 9.86963 11.547 10 11.3623 10H4.34141C4.12031 9.37444 4 8.70127 4 8C4 4.68629 6.68629 2 10 2C13.3137 2 16 4.68629 16 8C16 8.70127 15.8797 9.37444 15.6586 10ZM17 12V18H3V12H17Z" fill="#111111">
-                            </path>
-                        </svg>
-                        Investimentos
-                    </h1>
-                    <p>
-                        Investimentos a partir de R$ 1 e opções para todos os perfis. Uma experiência fácil, segura e transparente.
-                    </p>
-                    <a href="https://nubank.com.br/investimentos/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M17.748 10C17.9125 9.36076 18 8.6906 18 8C18 3.58172 14.4183 0 10 0C5.58172 0 2 3.58172 2 8C2 8.6906 2.08751 9.36076 2.25203 10H0V12H1V20H19V12H20V10H17.748ZM15.6586 10H13.7181C13.9295 8.71991 13.0758 7.49743 11.7894 7.26354L9.06789 6.76872C8.85473 6.72997 8.71476 6.52395 8.75725 6.31149C8.79347 6.13037 8.9525 6 9.13721 6H13V4H11V3H8.99999V4.00391C7.92114 4.06547 7.01026 4.84841 6.79609 5.91926C6.53428 7.2283 7.3967 8.49766 8.71012 8.73646L11.4316 9.23128C11.6448 9.27003 11.7847 9.47605 11.7422 9.68851C11.706 9.86963 11.547 10 11.3623 10H4.34141C4.12031 9.37444 4 8.70127 4 8C4 4.68629 6.68629 2 10 2C13.3137 2 16 4.68629 16 8C16 8.70127 15.8797 9.37444 15.6586 10ZM17 12V18H3V12H17Z" fill="#111111">
-                            </path>
-                        </svg>
-                        Caixinhas
-                    </h1>
-                    <p>
-                        Organize e guarde dinheiro para seus planos. Crie Caixinhas personalizadas para cada um de seus objetivos.
-                    </p>
-                    <a href="https://nubank.com.br/investimentos/#section-caixinhas">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M10 8L10 5L8 5L8 8H10Z" fill="#111111"></path>
-                            <path d="M12 3.49691e-07L4 0C1.79086 -9.65645e-08 6.21101e-07 1.79086 5.24537e-07 4L0 16C-9.65645e-08 18.2091 1.79086 20 4 20H12C14.2091 20 16 18.2091 16 16V4C16 1.79086 14.2091 4.46256e-07 12 3.49691e-07ZM14 4L14 16C14 17.1046 13.1046 18 12 18H4C2.89543 18 2 17.1046 2 16L2 4C2 2.89543 2.89543 2 4 2L12 2C13.1046 2 14 2.89543 14 4Z" fill="#111111"></path>
-                        </svg>
-                        Cartão de crédito
-                    </h1>
-                    <p>
-                        Um cartão completo, moderno e gratuito pra você. E com anuidade zero. Fique no controle da sua vida financeira.
-                    </p>
-                    <a href="https://nubank.com.br/cartao/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M14.8282 2.10053C13.2661 0.538431 10.7334 0.538431 9.17135 2.10053L2.10028 9.1716C0.538187 10.7337 0.538187 13.2664 2.10028 14.8284L9.17135 21.8995C10.7334 23.4616 13.2661 23.4616 14.8282 21.8995L21.8993 14.8285C23.4614 13.2664 23.4614 10.7337 21.8993 9.1716L14.8282 2.10053ZM15.9263 6.02704C15.279 6.11453 14.6739 6.41167 14.2069 6.87869L11.9998 9.08579L9.79267 6.87869C9.32565 6.41167 8.72052 6.11453 8.07327 6.02704L10.5856 3.51474C11.3666 2.73369 12.6329 2.73369 13.414 3.51474L15.9263 6.02704ZM17.8993 8.00001L20.4851 10.5858C21.2661 11.3669 21.2661 12.6332 20.4851 13.4142L17.8993 16H16.3282C16.063 16 15.8086 15.8946 15.6211 15.7071L13.414 13.5C12.6329 12.719 11.3666 12.719 10.5856 13.5L8.37846 15.7071C8.19092 15.8946 7.93657 16 7.67135 16H6.10027L3.5145 13.4142C2.73345 12.6332 2.73345 11.3669 3.5145 10.5858L6.1003 8.00001H7.67135C7.93657 8.00001 8.19092 8.10536 8.37846 8.2929L10.5856 10.5C11.3666 11.2811 12.6329 11.2811 13.414 10.5L15.6211 8.2929C15.8086 8.10536 16.063 8.00001 16.3282 8.00001H17.8993ZM10.5856 20.4853L8.07324 17.973C8.7205 17.8855 9.32565 17.5884 9.79267 17.1213L11.9998 14.9142L14.2069 17.1213C14.6739 17.5884 15.2791 17.8855 15.9263 17.973L13.414 20.4853C12.6329 21.2664 11.3666 21.2664 10.5856 20.4853Z" fill="#111111"></path>
-                        </svg>
-                        Pix no crédito
-                    </h1>
-                    <p>
-                        Faça um Pix e pague com o cartão de crédito: não use o saldo da sua conta e concentre os gastos no cartão.
-                    </p>
-                    <a href="https://blog.nubank.com.br/pix-no-credito-no-nubank-tudo-sobre/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M0 0V10H2V0H0Z" fill="#111111"></path>
-                            <path d="M10 0V10H12V0H10Z" fill="#111111"></path>
-                            <path d="M4 0H8V10H4V0Z" fill="#111111"></path>
-                            <path d="M14 0V10H18V0H14Z" fill="#111111"><path>
-                        </svg>
-                        Boleto no crédito
-                    </h1>
-                    <p>
-                        Pague ou parcele em até 12 vezes seus boletos com o cartão de crédito e tenha mais controle sobre o seu dinheiro.
-                    </p>
-                    <a href="https://blog.nubank.com.br/como-pagar-boletos-com-o-cartao-de-credito-nubank/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M10 8L10 5L8 5L8 8H10Z" fill="#111111"></path>
-                            <path d="M12 3.49691e-07L4 0C1.79086 -9.65645e-08 6.21101e-07 1.79086 5.24537e-07 4L0 16C-9.65645e-08 18.2091 1.79086 20 4 20H12C14.2091 20 16 18.2091 16 16V4C16 1.79086 14.2091 4.46256e-07 12 3.49691e-07ZM14 4L14 16C14 17.1046 13.1046 18 12 18H4C2.89543 18 2 17.1046 2 16L2 4C2 2.89543 2.89543 2 4 2L12 2C13.1046 2 14 2.89543 14 4Z" fill="#111111"></path>
-                        </svg>
-                        Parcelamento de compras
-                    </h1>
-                    <p>
-                        Parcele suas compras à vista feitas em estabelecimentos físicos e virtuais direto no app do Nubank.
-                    </p>
-                    <a href="https://blog.nubank.com.br/quando-vale-a-pena-usar-parcelamento-de-compras-especificas-nubank/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M10 8L10 5L8 5L8 8H10Z" fill="#111111"></path>
-                            <path d="M12 3.49691e-07L4 0C1.79086 -9.65645e-08 6.21101e-07 1.79086 5.24537e-07 4L0 16C-9.65645e-08 18.2091 1.79086 20 4 20H12C14.2091 20 16 18.2091 16 16V4C16 1.79086 14.2091 4.46256e-07 12 3.49691e-07ZM14 4L14 16C14 17.1046 13.1046 18 12 18H4C2.89543 18 2 17.1046 2 16L2 4C2 2.89543 2.89543 2 4 2L12 2C13.1046 2 14 2.89543 14 4Z" fill="#111111"></path>
-                        </svg>
-                        Cartão Virtual
-                    </h1>
-                    <p>
-                        Crie novos cartões virtuais de crédito ou débito no seu app e proteja ainda mais suas compras online.
-                    </p>
-                    <a href="https://blog.nubank.com.br/cartao-virtual-nubank-tudo-sobre/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M10 8L10 5L8 5L8 8H10Z" fill="#111111"></path>
-                            <path d="M12 3.49691e-07L4 0C1.79086 -9.65645e-08 6.21101e-07 1.79086 5.24537e-07 4L0 16C-9.65645e-08 18.2091 1.79086 20 4 20H12C14.2091 20 16 18.2091 16 16V4C16 1.79086 14.2091 4.46256e-07 12 3.49691e-07ZM14 4L14 16C14 17.1046 13.1046 18 12 18H4C2.89543 18 2 17.1046 2 16L2 4C2 2.89543 2.89543 2 4 2L12 2C13.1046 2 14 2.89543 14 4Z" fill="#111111"></path>
-                        </svg>
-                        Cartão Adicional
-                    </h1>
-                    <p>
-                        Cartão de crédito físico adicional para ser compartilhado com outra pessoa utilizando o mesmo limite.
-                    </p>
-                    <a href="https://blog.nubank.com.br/cartao-de-credito-adicional-do-nubank-tudo-o-que-voce-precisa-saber/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M10 8L10 5L8 5L8 8H10Z" fill="#111111"></path>
-                            <path d="M12 3.49691e-07L4 0C1.79086 -9.65645e-08 6.21101e-07 1.79086 5.24537e-07 4L0 16C-9.65645e-08 18.2091 1.79086 20 4 20H12C14.2091 20 16 18.2091 16 16V4C16 1.79086 14.2091 4.46256e-07 12 3.49691e-07ZM14 4L14 16C14 17.1046 13.1046 18 12 18H4C2.89543 18 2 17.1046 2 16L2 4C2 2.89543 2.89543 2 4 2L12 2C13.1046 2 14 2.89543 14 4Z" fill="#111111"></path>
-                        </svg>
-                        Carteira Digital
-                    </h1>
-                    <p>
-                        Armazene os dados do seu cartão de crédito nas carteiras digitais do Google Pay, Apple Pay e Samsung Pay.
-                    </p>
-                    <a href="https://blog.nubank.com.br/quais-carteiras-digitais-o-nubank-tem/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M10.0004 5.5778L12.6624 2.91574C13.9133 1.66489 15.9519 1.70003 17.1589 2.99325C18.3084 4.22493 18.2753 6.14599 17.084 7.33732L10.0003 14.421L2.91672 7.33732C1.72539 6.14599 1.69228 4.22493 2.84184 2.99325C4.04884 1.70003 6.08744 1.6649 7.33829 2.91575L10.0004 5.5778ZM10.0003 17.2494L18.4982 8.75154C20.4516 6.79813 20.5059 3.64818 18.621 1.62861C16.6419 -0.49186 13.2992 -0.549477 11.2482 1.50153L10.0003 2.74937L8.75251 1.50153C6.7015 -0.549471 3.35884 -0.491856 1.37973 1.62861C-0.505197 3.64818 -0.450903 6.79813 1.50251 8.75154L10.0003 17.2494Z" fill="#111111"></path>
-                        </svg>
-                        Seguro de vida
-                    </h1>
-                    <p>
-                        Proteja você e quem você ama por a partir de R$4 por mês. Escolha o plano que se encaixa ao seu perfil.
-                    </p>
-                    <a href="https://nubank.com.br/seguros/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 16H5V18H9V16Z" fill="#111111"></path><path d="M0 4V18C0 20.2091 1.79086 22 4 22H10C12.2091 22 14 20.2091 14 18V4C14 1.79086 12.2091 0 10 0H4C1.79086 0 0 1.79086 0 4ZM4 2H10C11.1046 2 12 2.89543 12 4V18C12 19.1046 11.1046 20 10 20H4C2.89543 20 2 19.1046 2 18V4C2 2.89543 2.89543 2 4 2Z" fill="#111111"></path></svg>
-                        Seguro celular
-                    </h1>
-                    <p>
-                        A mais completa proteção do mercado, seja para furto ou roubo de celular, tela quebrada ou oxidada.
-                    </p>
-                    <a href="https://nubank.com.br/seguros/celular/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12H8V10H5V12Z" fill="#111111"></path><path d="M4 0C1.79086 0 0 1.79086 0 4V18L18 18V4C18 1.79086 16.2091 0 14 0H4ZM2 6V4C2 2.89543 2.89543 2 4 2H5V6H2ZM11 2V6H7V2L11 2ZM2 8L16 8V16H13V10H11V16H2L2 8ZM13 6V2H14C15.1046 2 16 2.89543 16 4V6H13Z" fill="#111111"></path></svg>
-                        Conta
-                    </h1>
-                    <p>
-                        Receba, movimente e guarde seu dinheiro de um jeito simples e com rendimento maior que a poupança.
-                    </p>
-                    <a href="https://nubank.com.br/conta/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M12.6371 17.5529C10.7801 18.2013 8.74928 18.1428 6.93265 17.3886C5.3031 16.7121 3.94834 15.5184 3.07176 14L5.5 14L5.5 12H1C0.447715 12 0 12.4477 0 13V19H2L2 16.0001C3.06696 17.4226 4.50177 18.545 6.16582 19.2358C8.4366 20.1785 10.9751 20.2516 13.2964 19.4411C15.6176 18.6306 17.5589 16.9934 18.7495 14.8422C19.94 12.6909 20.2963 10.1765 19.7503 7.77923C19.2042 5.38195 17.7942 3.26984 15.7895 1.84638C13.7847 0.422931 11.3259 -0.212083 8.88259 0.0626477C6.4393 0.33738 4.18286 1.5026 2.54431 3.33571C1.3565 4.66458 0.553754 6.2769 0.201999 8.00002H2.254C2.57097 6.7725 3.17772 5.62816 4.03545 4.66858C5.34628 3.20208 7.15144 2.26991 9.10607 2.05012C11.0607 1.83034 13.0278 2.33835 14.6316 3.47711C16.2353 4.61587 17.3634 6.30556 17.8002 8.22339C18.237 10.1412 17.952 12.1528 16.9996 13.8737C16.0471 15.5947 14.4941 16.9045 12.6371 17.5529Z" fill="#111111">
-                            </path>
-                            <path d="M10.9993 4.99978H8.99928V6.00372C7.92066 6.06549 7.01001 6.84836 6.79587 7.91904C6.53407 9.22808 7.39648 10.4974 8.70991 10.7362L11.4313 11.2311C11.6445 11.2698 11.7845 11.4758 11.742 11.6883C11.7058 11.8694 11.5468 11.9998 11.362 11.9998L7.49997 12L7.50007 14L8.99928 14V14.9998H10.9993V13.9999L11.3621 13.9998C12.5002 13.9998 13.48 13.1965 13.7032 12.0806C13.965 10.7715 13.1026 9.50212 11.7891 9.26331L9.06768 8.76851C8.85451 8.72975 8.71454 8.52373 8.75703 8.31128C8.79326 8.13016 8.95229 7.99978 9.137 7.99978H12.9998V5.99978H10.9993V4.99978Z" fill="#111111">
-                            </path>
-                        </svg>
-                        Assistente de pagamento
-                    </h1>
-                    <p>
-                        O seu assistente pessoal quando o assunto é pagar as contas do mês, desde o boleto de água até Pix para o professor de inglês.
-                    </p>
-                    <a href="https://nubank.com.br/conta/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="carousel-cards">
-                    <h1>
-                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7.00007 4.50049V6.5H5.00007V4.50049C5.00007 2.328 6.78443 0.500488 9.00007 0.500488C11.2157 0.500488 13.0001 2.328 13.0001 4.50049V6.5H11.0001V4.50049C11.0001 3.41952 10.0981 2.50049 9.00007 2.50049C7.90201 2.50049 7.00007 3.41952 7.00007 4.50049Z" fill="#111111"></path><path d="M0.215582 16.2349L0.864487 6.50098H2.86893L2.21115 16.3679C2.1342 17.5223 3.0498 18.501 4.20672 18.501H13.7934C14.9503 18.501 15.8659 17.5223 15.789 16.3679L15.1311 6.50098H17.1355L17.7845 16.2349C17.9385 18.5436 16.1073 20.501 13.7934 20.501H4.20672C1.89287 20.501 0.0616726 18.5436 0.215582 16.2349Z" fill="#111111"></path></svg>
-                        Shopping
-                    </h1>
-                    <p>
-                        Um shopping que oferece tudo que você precisa: mais de 150 lojas parceiras, segurança e ótimos preços.
-                    </p>
-                    <a href="https://nubank.com.br/nu-shopping/">
-                        <button>
-                            Saiba mais
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV sc-erIdjD NkFQJ" color="currentColor" role="img">
-                                <title>Internal Link</title>
-                                <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-              </div>    
-            </div>
+                </div> <!-- .carousel-track -->
+            </div> <!-- container-cards -->
 
             <div class="carousel-buttons">
                 <button class="prev">
-                    <img src="/assets/icons/arrow-left.svg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV" color="currentColor" role="img"><title>Arrow Left</title>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.414 3.5L4.914 9H19.5v2H4.914l5.5 5.5L9 17.914l-7.207-7.207a1 1 0 010-1.414L9 2.086 10.414 3.5z"></path>
+                    </svg>
                 </button>
+
                 <button class="next">
-                    <img src="/assets/icons/arrow-right.svg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV" color="currentColor" role="img">
+                        <title>Arrow Right</title>
+                        <path d="M18.5 10H2.5M18.5 10L12 16.5M18.5 10L12 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </svg>
                 </button>
-            </div>
+            </div> <!-- .carousel-buttons  -->
         </section>
 
         <section class="cred-card">
             <div>
-                <h1>
+                <h2>
                     <a href="https://nubank.com.br/cartao/">Conheça nosso Cartão de Crédito</a>
-                </h1>
-                <h3>Pode chamar ele de roxinho. Além disso, pode chamar ele de moderno, gratuito e prático também.</h3>
+                </h2>
+                <p>Pode chamar ele de roxinho. Além disso, pode chamar ele de moderno, gratuito e prático também.</p>
                 <a href="https://nubank.com.br/cartao/">Saiba mais
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV" color="currentColor" role="img">
                         <title>Arrow Right</title>
@@ -875,17 +483,16 @@
                     </svg>
                 </a>
             </div>
-            <div>
-                <img src="/assets/images/cred-card-image.png" alt="passando cartão Nubank por aproximação">
-            </div>
+            <img src="/assets/images/cred-card-image.png" alt="passando cartão Nubank por aproximação">
+
         </section>
 
         <section class="ultraviolet-card">
             <img src="/assets/images/ultraviolet-card.png" alt="Mulher segurando o cartão Nubank ultravioleta">
             <div>
-                <h1>
+                <h2>
                     <a href="https://nubank.com.br/ultravioleta/">Nubank Ultravioleta</a>
-                </h1>
+                </h2>
                 <p>A experiência exclusiva para clientes de alta renda.</p>
                 <a href="https://nubank.com.br/ultravioleta/">Saiba mais
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV" color="currentColor" role="img">
@@ -897,13 +504,13 @@
         </section>
 
         <section class="card-benefits">
-            <h1>Faça mais com seu cartão de crédito</h1>
+            <h2>Faça mais com seu cartão de crédito</h2>
             <ul>
                 <li>
                     <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" index="13">
                         <path d="M5.87104 2H13.7428V0H15.7108V2H16.6948H18.6627V4V6V8V18V20H16.6948H2.91912H0.951172V18V8V6V4V2H2.91912H3.90309V0H5.87104V2ZM16.6948 18V8H9.80694H2.91912V18H16.6948ZM16.6948 4H2.91912V6H9.80694H16.6948V4ZM14.7268 12H10.7909V16H14.7268V12Z" fill="#111111"></path>
                     </svg>
-                    <h1>Pix no crédito</h1>
+                    <h3>Pix no crédito</h3>
                     <p>Faça pagamentos PIX utilizando seu cartão de crédito. Parcele e aproveite essa vantagem.</p>
                 </li>
                 <li>
@@ -913,7 +520,7 @@
                         <path d="M4 0H8V10H4V0Z" fill="#111111"></path>
                         <path d="M14 0V10H18V0H14Z" fill="#111111"><path>
                     </svg>
-                    <h1>Pagamento de Boleto com cartão de crédito</h1>
+                    <h3>Pagamento de Boleto com cartão de crédito</h3>
                     <p>Pague seus boletos no crédito e parcele em até 12 vezes.</p>
                 </li>
                 <li>
@@ -923,18 +530,18 @@
                         <path d="M19.6799 17C21.3102 17 22.6318 15.6569 22.6318 14C22.6318 12.3431 21.3102 11 19.6799 11C18.0496 11 16.728 12.3431 16.728 14C16.728 15.6569 18.0496 17 19.6799 17ZM20.6639 13V15H18.6959V13H20.6639Z" fill="#111111"></path>
                         <path d="M6.88822 14C6.88822 15.6569 5.5666 17 3.9363 17C2.306 17 0.984375 15.6569 0.984375 14C0.984375 12.3431 2.306 11 3.9363 11C5.5666 11 6.88822 12.3431 6.88822 14ZM2.95232 13V15H4.92027V13H2.95232Z" fill="#111111"></path>
                     </svg>
-                    <h1>Parcelamento de Compras</h1>
+                    <h3>Parcelamento de Compras</h3>
                     <p>Comprou e a loja não parcelou? O Nu parcela a compra para você! Simples e prático, direto na sua fatura.</p>
                 </li>
             </ul>
         </section>
 
         <section class="more-products">
-            <h1>Mais Produtos Nubank</h1>
+            <h2>Mais Produtos Nubank</h2>
             <div class="container-products-cards">
-                <div>
+                <div class="more-products-cards">
                     <img src="/assets/images/product-card-1.jpg" alt="Casal analisando suas financias">
-                    <h1>Empréstimos</h1>
+                    <h3>Empréstimos</h3>
                     <p>Transparentes, seguros e do seu jeito: da simulação até a última parcela.</p>
                     <a href="https://nubank.com.br/emprestimo/">Saiba mais
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV" color="currentColor" role="img">
@@ -943,9 +550,10 @@
                         </svg>
                     </a>
                 </div>
-                <div>
+
+                <div class="more-products-cards">
                     <img src="/assets/images/product-card-2.jpg" alt="Uma família no parque tirando foto com seu cachorro">
-                    <h1>Seguro de vida</h1>
+                    <h3>Seguro de vida</h3>
                     <p>Seguro para proteger você e quem você mais ama: agora e no futuro.</p>
                     <a href="https://nubank.com.br/seguros/">Saiba mais
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV" color="currentColor" role="img">
@@ -954,9 +562,9 @@
                         </svg>
                     </a>
                 </div>
-                <div>
+                <div class="more-products-cards">
                     <img src="/assets/images/product-card-3.jpg" alt="Um rapaz sorrindo com seu celular na mão">
-                    <h1>Seguro celular</h1>
+                    <h3>Seguro celular</h3>
                     <p>Para você não ficar sem curtir seu celular e tudo que você pode fazer.</p>
                     <a href="https://nubank.com.br/seguros/celular/">Saiba mais
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 21 20" class="sc-kCvKRn gqAcLV" color="currentColor" role="img">
@@ -967,13 +575,14 @@
                 </div>
             </div>
         </section>
+
         <section class="investments">
             <div>
-                <h1>
+                <h2>
                     <a href="https://nubank.com.br/investimentos/">
                         Invista seu dinheiro
                     </a>
-                </h1>
+                </h2>
                 <p>O plano é facilitar seus planos. Comece hoje com as Caixinhas do Nubank.</p>
                 <a href="https://nubank.com.br/investimentos/">
                     Saiba mais
@@ -985,12 +594,13 @@
             </div>
             <img src="/assets/images/smartphone-nu-investment.jpg" alt="Celular na aba caixinhas do Nubank">
         </section>
+
         <section class="account-types">
             <div>
                 <img src="/assets/images/smartphone-nubank-app.jpg" alt="smartphone aberto no app da Nubank">
-                <h1>
+                <h2>
                     <a href="ttps://nubank.com.br/conta/">Conta Nubank</a>
-                </h1>
+                </h2>
                 <p>Manter suas contas em dia nunca foi tão simples com assistente de pagamentos.</p>
                 <a href="https://nubank.com.br/conta/">
                     Saiba mais
@@ -1002,9 +612,9 @@
             </div>
             <div>
                 <img src="/assets/images/nubank-business-card.jpg" alt="">
-                <h1>
+                <h2>
                     <a href="https://nubank.com.br/conta-pj/">Conta PJ</a>
-                </h1>
+                </h2>
                 <p>Ficou mais fácil organizar o seu negócio com a conta PJ do Nubank.</p>
                 <a href="https://nubank.com.br/conta-pj/">
                     Saiba mais
@@ -1015,12 +625,13 @@
                 </a>
             </div>
         </section>
+
         <section class="nu-shopping">
             <img src="/assets/images/nu-shopping-image.jpg" alt="mulher na mesa de café da manhã vendo o celular">
             <div>
-                <h1>
+                <h2>
                     <a href="https://nubank.com.br/nu-shopping/">Shopping do Nu</a>
-                </h1>
+                </h2>
                 <p>Tem shopping no seu bank! Mais de 150 parceiros com ofertas para você aproveitar.</p>
                 <a href="https://nubank.com.br/nu-shopping/">
                     Saiba mais
@@ -1033,7 +644,7 @@
         </section>
 
         <section class="blog">
-            <h1>Fique por dentro das Novidades</h1>
+            <h2>Fique por dentro das Novidades</h2>
             <a href="https://blog.nubank.com.br/">
                 Ir para Blog do Nu
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 21 20" class="sc-UnBNk eumutk sc-kRJYiJ kHBbHI" color="currentColor" role="img"><title>External Link</title>
@@ -1043,8 +654,8 @@
             <div class="container-blog-cards">
                 <div class="blog-cards">
                     <img src="/assets/images/blog-card-1.jpg" alt="mulher vendo app Nubank na aba caixinhas">
-                    <span>Caixinhas</span>
-                    <h2>Caixinhas do Nubank: tudo o que você precisa saber sobre a ferramenta que facilita os seus planos</h2>
+                    <p>Caixinhas</p>
+                    <h3>Caixinhas do Nubank: tudo o que você precisa saber sobre a ferramenta que facilita os seus planos</h3>
                     <a href="https://blog.nubank.com.br/caixinhas-do-nubank/">Ler artigo
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 21 20" class="sc-UnBNk eumutk sc-kRJYiJ kHBbHI" color="currentColor" role="img"><title>External Link</title>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.611 2.5h10.39a1 1 0 011 1v10.389h-2V5.914l-11 11L3.585 15.5l11-11H6.61v-2z"></path>
@@ -1054,8 +665,8 @@
 
                 <div class="blog-cards">
                     <img src="/assets/images/blog-card-2.jpg" alt="casal na sala com mulher no celular e homem no notebook">
-                    <span>Empréstimo</span>
-                    <h2>Como fazer empréstimo no Nubank? Confira dicas para escolher o crédito certo para você</h2>
+                    <p>Empréstimo</p>
+                    <h3>Como fazer empréstimo no Nubank? Confira dicas para escolher o crédito certo para você</h3>
                     <a href="https://blog.nubank.com.br/como-fazer-emprestimo-no-nubank/">Ler artigo
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 21 20" class="sc-UnBNk eumutk sc-kRJYiJ kHBbHI" color="currentColor" role="img"><title>External Link</title>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.611 2.5h10.39a1 1 0 011 1v10.389h-2V5.914l-11 11L3.585 15.5l11-11H6.61v-2z"></path>
@@ -1064,8 +675,8 @@
                 </div>
                 <div class="blog-cards">
                     <img src="/assets/images/blog-card-3.jpg" alt="mulher mostrando cartão Nubank">
-                    <span>N Possibilidades</span>
-                    <h2>10 situações da sua vida que o Nubank ajuda a resolver com N Possibilidades</h2>
+                    <p>N Possibilidades</p>
+                    <h3>10 situações da sua vida que o Nubank ajuda a resolver com N Possibilidades</h3>
                     <a href="https://blog.nubank.com.br/situacoes-vida-nubank-resolve-n-possibilidades/">Ler artigo
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 21 20" class="sc-UnBNk eumutk sc-kRJYiJ kHBbHI" color="currentColor" role="img"><title>External Link</title>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.611 2.5h10.39a1 1 0 011 1v10.389h-2V5.914l-11 11L3.585 15.5l11-11H6.61v-2z"></path>
@@ -1076,7 +687,7 @@
         </section>
 
         <section class="about">
-            <h1>Nós acreditamos que só uma pessoa pode ter controle sobre sua vida financeira: você.</h1>
+            <h2>Nós acreditamos que só uma pessoa pode ter controle sobre sua vida financeira: você.</h2>
             <a href="https://international.nubank.com.br/pt-br/sobre/">
                 Saiba mais sobre como fazemos isso
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 21 20" class="sc-UnBNk eumutk sc-kRJYiJ kHBbHI" color="currentColor" role="img"><title>External Link</title>
@@ -1086,9 +697,8 @@
         </section>
 
         <section class="nu-community">
-            <h1>NuCommunity</h1>
-            <h2>
-                A comunidade oficial do Nubank para você tirar dúvidas e compartilhar ideias.</h2>
+            <h2>NuCommunity</h2>
+            <p>A comunidade oficial do Nubank para você tirar dúvidas e compartilhar ideias.</p>
             <a href="https://comunidade.nubank.com.br/">
                 Faça parte
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 21 20" class="sc-UnBNk eumutk sc-kRJYiJ kHBbHI" color="currentColor" role="img"><title>External Link</title>
@@ -1098,7 +708,7 @@
         </section>
 
         <section class="sos-nu">
-            <h1>Conheça nossa central de informações em caso de emergências.</h1>
+            <h2>Conheça nossa central de informações em caso de emergências.</h2>
             <a href="https://blog.nubank.com.br/sos-nu/">
                 Conheça o SOS Nu
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 21 20" class="sc-UnBNk eumutk sc-kRJYiJ kHBbHI" color="currentColor" role="img"><title>External Link</title>
@@ -1169,7 +779,7 @@
                     <a href="https://nubank.com.br/cartao-pj/">Cartão de crédito PJ</a>
                 </li>
                 <li>
-                    <a href="https://nubank.com.br/seguros/">Nubank Vida</a>
+                    <a href="https://nubank.com.br/seguros/">Nu Vida</a>
                 </li>
                 <li>
                     <a href="https://nubank.com.br/investimentos/">Investimentos</a>
@@ -1306,10 +916,23 @@
                     <a href="tel:08008870463">0800 887 0463</a>
                 </li>
                 <li>
+                    Atendimento da 9h às 18h (dias úteis)
                     <a href="ouvidoria@nubank.com.br">ouvidoria@nubank.com.br</a>
                 </li>
                 <li>
-                    Atendimento da 9h às 18h (dias úteis)
+                    <a href="https://nubank.com.br/praja/">
+                        Portal de Relacionamento com Autoridades Judiciais e Administrativas
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <p>Privacidade e Proteção de dados</p>
+                <li>
+                    Encarregada: Raíssa Moura Ferreira
+                    <a href="dpo@nubank.com.br">
+                        dpo@nubank.com.br
+                    </a>
                 </li>
             </ul>
 
@@ -1332,7 +955,7 @@
                 </li>
             </ul>
         </nav>
-        <hr>
+
         <div class="company">
             <span>
                 <svg width="44" height="24" viewBox="0 0 44 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1382,14 +1005,15 @@
                 </a>
             </div>
         </div>
-        <hr>
+
         <div class="me-github">
             <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
                 <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
             </svg>
-            <a href="https://github.com/CesarBeda/"> &copy; Cesar Beda - 2024</a>
+            <a href="https://github.com/CesarBeda/"> Cesar Beda - 2024</a>
         </div>
     </footer>
+
     <script src="/script/script.js"></script>
 </body>
 </html>
