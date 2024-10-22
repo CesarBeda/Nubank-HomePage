@@ -178,21 +178,46 @@ header nav.header-menu {
   text-decoration: none;
 }
 
-/* header login link */
-.header-menu > a{
-  color: var(--purple);
+.header-menu div{
   display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+
+/* header login link */
+.header-menu > div a{
+  color: var(--purple);
   align-items: center;
   font-size: 1.125rem;
   font-weight: 600;
+  display: flex;
   gap: 0.5rem; /* space between text and icon. */
   border-bottom: solid transparent 0.15rem; /* to: don't move when hovering. */
-  margin-right: 3rem;
   cursor: pointer;
 }
 
-.header-menu > a:hover {
+.header-menu > div a:hover {
   border-bottom: solid var(--purple) 0.15rem;
+}
+
+.header-menu button{
+  display: none; 
+  background-color: var(--purple);
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 0 1.25rem;
+  cursor: pointer;
+}
+
+.header-menu button:hover{
+  filter: brightness(1.1);
+  transition: filter 0.5s linear;
 }
 
 header nav.menu-dropdown {

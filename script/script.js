@@ -27,6 +27,27 @@ document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
 // Inicializa o carousel
 updateCarousel();
 
+// Header    
+const header = document.querySelector('.header-menu');
+const buttonHeader = document.querySelector('#header-button');
+
+window.addEventListener('scroll', () => {
+    const headerPosition = header.offsetTop + window.scrollY;
+
+    /* add a button to the header when you get past the Hero section. */
+    if(headerPosition >= 672){
+        buttonHeader.style.display = 'block'; /* display button. */
+        /* add link to button. */
+        buttonHeader.addEventListener('click', () => {
+            window.open("https://nubank.com.br/conta", "_blank");
+        });
+    }
+    /* remove button. */
+    else{
+        document.querySelector('#header-button').style.display = 'none';
+    }
+});
+
 //SubMenu Drop-Down script
 const containerDropDown = document.querySelector('.menu-dropdown');
 const subMenu1 = document.getElementById('submenu-1');
@@ -99,7 +120,7 @@ const placeholder = document.getElementById('placeholder-cpf');
 const span = document.querySelector('#cpf-invalid');
 const invalidIcon = document.querySelector('#input-invalid-icon');
 const validIcon = document.querySelector('#input-valid-icon');
-const button =  document.querySelector('#button-cpf');
+const buttonCpf =  document.querySelector('#button-cpf');
 let firstTimeInput = true;
 
 function formatCpf(){
@@ -136,13 +157,13 @@ function approveCpf(){
         input.style.borderColor = 'var(--green)';
         validIcon.style.display = 'block';
         invalidIcon.style.display = 'none';
-        button.style.backgroundColor = 'var(--purple)';
-        button.style.color = 'var(--primary)';
-        button.style.cursor = 'pointer';
-        button.addEventListener('click', () => {
+        buttonCpf.style.backgroundColor = 'var(--purple)';
+        buttonCpf.style.color = 'var(--primary)';
+        buttonCpf.style.cursor = 'pointer';
+        buttonCpf.addEventListener('click', () => {
             window.open("https://nubank.com.br/conta", "_blank");
-        })
-        button.disabled = false;
+        });
+        buttonCpf.disabled = false;
         
     } else {
         console.log('cpf invalido');
@@ -152,10 +173,10 @@ function approveCpf(){
         input.style.borderColor = 'var(--red)';
         invalidIcon.style.display = 'block';
         validIcon.style.display = 'none';
-        button.style.backgroundColor = 'var(--gray-bg-inactive)';
-        button.style.color = 'var(--gray-text-inactive)';
-        button.style.cursor = 'not-allowed';
-        button.disabled = true;  
+        buttonCpf.style.backgroundColor = 'var(--gray-bg-inactive)';
+        buttonCpf.style.color = 'var(--gray-text-inactive)';
+        buttonCpf.style.cursor = 'not-allowed';
+        buttonCpf.disabled = true;  
     }
 }
 
