@@ -20,17 +20,46 @@ function moveSlide(step) {
     updateCarousel();
 }
 
-// Event listeners for arrow carousel buttons
+// Event listeners for arrow carousel buttons.
 document.querySelector('.next').addEventListener('click', () => moveSlide(1));
 document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
 
-// Inicializa o carousel
+// Initialize the carousel.
 updateCarousel();
 
-// Header    
+// Header.
 const header = document.querySelector('.header-menu');
 const buttonHeader = document.querySelector('#header-button');
+const menuItems = header.querySelectorAll('li');
 
+/* add hover and leave events in <li> menuItems. */
+menuItems.forEach((item, index) => {
+    item.addEventListener('mouseenter', () => hoverHeader(index));
+    item.addEventListener('mouseleave', leaveHeader);
+});
+
+/* hover opacity transitions. */
+function hoverHeader(index) {
+    // If the item is the first (logo), do nothing.
+    if (index === 0) return;
+
+    menuItems.forEach((item, i) => {
+        // Change the opacity of all items except the logo and the hovered item.
+        if (i !== 0) {
+            item.style.opacity = (i === index) ? '1' : '0.5';
+            item.style.transition = 'opacity 0.2s linear';
+        }
+    });
+}
+
+// On hover leave, return to the original opacity.
+function leaveHeader() {
+    menuItems.forEach((item) => {
+        item.style.opacity = '1';
+    });
+}
+
+// header button on scroll.
 window.addEventListener('scroll', () => {
     const headerPosition = header.offsetTop + window.scrollY;
 
@@ -44,7 +73,7 @@ window.addEventListener('scroll', () => {
     }
     /* remove button. */
     else{
-        document.querySelector('#header-button').style.display = 'none';
+        buttonHeader.style.display = 'none';
     }
 });
 
@@ -224,8 +253,9 @@ function validateCPF(cpf) {
     return true;  
 }
 
-input.addEventListener('input', () => formatCpf());
+input.addEventListener('input', formatCpf);
 
+// move placeholder above the input.
 input.addEventListener('focus', () => {
     placeholder.style.fontSize = '0.75rem';
     placeholder.style.top = '7.5rem';

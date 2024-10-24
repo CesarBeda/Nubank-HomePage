@@ -161,10 +161,11 @@ header nav.header-menu {
 }
 
 .header-menu ul li {
-  display: flex;
-  align-items: center;
+  color: var(--black);
   font-size: 1rem;
   font-weight: 600;
+  display: flex;
+  align-items: center;
   height: 100%;
   width: max-content;
   gap: 0.5rem;
@@ -173,8 +174,8 @@ header nav.header-menu {
 }
 
 .header-menu ul li a {
+  color: inherit;
   cursor: pointer;
-  color: var(--black);
   text-decoration: none;
 }
 
