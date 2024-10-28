@@ -42,7 +42,6 @@ menuItems.forEach((item, index) => {
 function hoverHeader(index) {
     // If the item is the first (logo), do nothing.
     if (index === 0) return;
-
     menuItems.forEach((item, i) => {
         // Change the opacity of all items except the logo and the hovered item.
         if (i !== 0) {
@@ -55,93 +54,68 @@ function hoverHeader(index) {
 // On hover leave, return to the original opacity.
 function leaveHeader() {
     menuItems.forEach((item) => {
-        item.style.opacity = '1';
+        item.style.opacity = '';
     });
 }
 
 // header button on scroll.
 window.addEventListener('scroll', () => {
     const headerPosition = header.offsetTop + window.scrollY;
-
     /* add a button to the header when you get past the Hero section. */
-    if(headerPosition >= 672){
-        buttonHeader.style.display = 'block'; /* display button. */
-        /* add link to button. */
-        buttonHeader.addEventListener('click', () => {
-            window.open("https://nubank.com.br/conta", "_blank");
-        });
-    }
-    /* remove button. */
-    else{
-        buttonHeader.style.display = 'none';
-    }
+    buttonHeader.style.display = (headerPosition >= 672) ? 'block' : 'none';
 });
 
+/* add link to button. */
+buttonHeader.addEventListener('click', () => {
+    window.open("https://nubank.com.br/conta", "_blank");
+});
+
+
 //SubMenu Drop-Down script
-const containerDropDown = document.querySelector('.menu-dropdown');
-const subMenu1 = document.getElementById('submenu-1');
-const subMenu2 = document.getElementById('submenu-2');
-const subMenu3 = document.getElementById('submenu-3');
-const arrowHeader = document.getElementsByClassName('arrow-header');
+const switchMenus = document.querySelectorAll('.switch-submenu');
+const subMenus = document.querySelectorAll('.submenu');
+const arrowsHeader = document.querySelectorAll('.arrow-header');
 
 function showSubMenu(index) {
-    setTimeout(() => {
-        containerDropDown.classList.add('open');
-        arrowHeader[index].style.transform = 'rotate(180deg)';
-        arrowHeader[index].style.transition = '0.2s';
+    subMenus[index].classList.add('show'); // display submenu corresponding to the index.
+}
 
-        switch (index) {
-            
-            case 0:
-                subMenu2.style.display = 'none';
-                subMenu3.style.display = 'none';
-                subMenu1.style.display = 'flex';
-                break;
-                
-            case 1:
-                subMenu1.style.display = 'none';
-                subMenu3.style.display = 'none';
-                subMenu2.style.display = 'flex';
-                break;
-
-            case 2:
-                subMenu1.style.display = 'none';
-                subMenu2.style.display = 'none';
-                subMenu3.style.display = 'flex';
-                break;
-        
-            default:
-                break;
+function keepSubMenu(index) {
+    // if the mouse leaves the <li> #switch-menu, but enters the SubMenu.
+    subMenus[index].classList.add('show'); // keep submenu corresponding to the index.
+    arrowsHeader[index].style.transform = 'rotate(180deg)'; // keep the arrow pointing up when the menu is displayed.
+    menuItems.forEach((item, i) => {
+        // Change the opacity of all items except the logo and the hovered subMenu <li> #switch.
+        if (i !== 0) {
+            item.style.opacity = (i === index + 2) ? '1' : '0.5';
         }
-    }, 250);
+    });
+    
 }
 
-function keepSubmenu(index) {
-    containerDropDown.classList.add('open');
-    arrowHeader[index].style.transform = 'rotate(180deg)';
+function hideSubMenu(index) {
+    subMenus[index].classList.remove('show');
+    arrowsHeader[index].style.transform = ''; // arrow in the original position
+
+    // On hover leave in subMenu, return to the original opacity.
+    menuItems.forEach((item, i) => {
+        if (i !== 0) {
+            item.style.opacity = '';
+        }
+    });
 }
 
-function hideSubmenu(index) {
-    containerDropDown.classList.remove('open'); 
-    arrowHeader[index].style.transform = 'rotate(360deg)';
-    arrowHeader[index].style.transition = '0.2s';
-}
+// Add event listeners for each switch menu
+switchMenus.forEach((switchMenu, i) => {
+    switchMenu.addEventListener('mouseenter', () => showSubMenu(i))
+    switchMenu.addEventListener('mouseleave', () => hideSubMenu(i))
+});
 
-document.getElementById('switch-submenu-1').addEventListener('mouseenter', () => showSubMenu(0));
-document.getElementById('switch-submenu-2').addEventListener('mouseenter', () => showSubMenu(1));
-document.getElementById('switch-submenu-3').addEventListener('mouseenter', () => showSubMenu(2));
-
-document.getElementById('switch-submenu-1').addEventListener('mouseleave', () => hideSubmenu(0));
-document.getElementById('switch-submenu-2').addEventListener('mouseleave', () => hideSubmenu(1));
-document.getElementById('switch-submenu-3').addEventListener('mouseleave', () => hideSubmenu(2));
-
-subMenu1.addEventListener('mouseenter', () => keepSubmenu(0));
-subMenu2.addEventListener('mouseenter', () => keepSubmenu(1));
-subMenu3.addEventListener('mouseenter', () => keepSubmenu(2));
-
-subMenu1.addEventListener('mouseleave', () => hideSubmenu(0));
-subMenu2.addEventListener('mouseleave', () => hideSubmenu(1));
-subMenu3.addEventListener('mouseleave', () => hideSubmenu(2));
+// Add event listeners for each subMenu.
+subMenus.forEach((subMenu, i) => {
+    subMenu.addEventListener('mouseenter', () => keepSubMenu(i))
+    subMenu.addEventListener('mouseleave', () => hideSubMenu(i))
+});
 
 // Hero Section CPF Card
 const input = document.querySelector('input');
@@ -180,7 +154,6 @@ function approveCpf(){
 
     //if cpf is valid or invalid.
     if (validateCPF(input.value)){
-        console.log('cpf valido');
         span.style.color = 'transparent';
         input.style.color = 'var(--green)';
         input.style.borderColor = 'var(--green)';
@@ -195,7 +168,6 @@ function approveCpf(){
         buttonCpf.disabled = false;
         
     } else {
-        console.log('cpf invalido');
         span.style.color = 'var(--red)';
         span.style.userSelect = 'text';
         input.style.color = 'var(--red)';
@@ -214,8 +186,6 @@ function validateCPF(cpf) {
     // Removes characters such as dots and dashes
     cpf = cpf.replace(/[^\d]/g, '');
 
-    console.log("cpf: " + cpf);
-    
     // Verifica se o CPF tem 11 dígitos ou é uma sequência repetida (tipo "111.111.111-11").
     // Checks if the CPF has 11 digits or is a repeated sequence (such as "111.111.111-11").
     if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) {

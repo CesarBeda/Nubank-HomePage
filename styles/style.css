@@ -22,7 +22,7 @@
 
 /* General styles for repetitive elements */
 
-/* espaçamento utilizados em diferentes seções */
+/* Styles used in different sections */
 section {
   display: flex;
   align-items: center;
@@ -45,8 +45,6 @@ h2 {
     letter-spacing: -0.05rem;
     height: fit-content;
     width: fit-content;
-
-    /* border: 1px red solid; */
 }
 
 /* <h2> title with <a> links */
@@ -137,20 +135,23 @@ section > a > svg {
 /* Header */
 header {
   background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   z-index: 2;
-  height: 3.5rem;
   width: 100%;
-  box-shadow: 0px 1px 4px 0px #00000030;
+  box-shadow: 0px 1px 2px 0px #00000010;
 }
 
 header nav.header-menu {
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 3rem; /* space the logo to the left margin of the page. */
-  height: 100%;
+  padding-left: 3rem; /* space the logo to the left margin of the page. */
+  height: 3.5rem;
+  z-index: 2;
 }
 
 .header-menu ul {
@@ -221,25 +222,44 @@ header nav.header-menu {
   transition: filter 0.5s linear;
 }
 
-header nav.menu-dropdown {
-  background-color: transparent; /* invisible because there is space left for the dropdown transition. */
-  display: flex;
-  align-items: start;
-  overflow: hidden;
-  height: 0px;
-  width: 100%;
-  margin: 0;
-  transition: height 0.2s ease-in;
+/* SVG arrow in <li> sub-menu switches */
+header li.switch-submenu > svg{
+  transition: transform 0.1s linear;
 }
-.menu-dropdown.open {
-  height: 550px; /* more space than necessary to support all submenus */
+header li.switch-submenu:hover > svg{
+  transform: rotate(180deg);
 }
 
 .submenu {
   background-color: var(--primary);
-  width: 100%;
   padding: 2rem 0 4.5rem 2rem;
-  box-shadow: 0px 1px 4px 0px #00000030;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 3.5rem;
+  transform: translateY(-100%);
+  transition: transform 0.35s ease-out, box-shadow 0.35s ease;
+  box-shadow: none;
+}
+
+.submenu.show {
+  transform: translateY(0%);
+  box-shadow: 0px 1px 2px 0px #00000010;
+  z-index: 1;
+}
+
+/* Drop-down menus */
+#submenu-1 {
+  gap: 7rem; /* individuals gaps for layout */
+}
+
+#submenu-2 {
+  gap: 32rem; /* individuals gaps for layout */
+}
+
+#submenu-3 {
+  gap: 20rem; /* individuals gaps for layout */
 }
 
 .submenu ul {
@@ -270,22 +290,6 @@ header nav.menu-dropdown {
 .submenu > ul > li > a:hover {
   color: var(--purple);
 }
-  
-/* Switch drop down menus */
-#submenu-1 {
-  display: none;
-  gap: 7rem; /* individuals gaps for layout */
-}
-
-#submenu-2 {
-  display: none;
-  gap: 32rem; /* individuals gaps for layout */
-}
-
-#submenu-3 {
-  display: none;
-  gap: 20rem; /* individuals gaps for layout */
-}
 
 /* Styles Hero section */
 section.hero-section {
@@ -297,7 +301,7 @@ section.hero-section {
   align-items: center;
   justify-content: space-between;
   height: 42rem;
-  margin-top: 3.5rem; /* borda alinhada com borda do header */
+  margin-top: 3.5rem; /* border top aligned with header border  bottom. */
 }
 
 /* Titles hero section */
